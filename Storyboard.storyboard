@@ -34,7 +34,7 @@
                                     <action selector="loginButton" destination="bvY-37-aNz" eventType="touchUpInside" id="JqP-Iw-cRy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ck8-w1-RDQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Graffiti" id="ck8-w1-RDQ">
                                 <rect key="frame" x="16" y="299" width="288" height="249"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -97,7 +97,6 @@
         <!--My Tags-->
         <scene sceneID="nw0-7o-4vw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WM7-nY-olP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AzH-2b-zmT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZ6-qH-zLi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -113,13 +112,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="My Tags" id="iA8-Zb-I6r"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WM7-nY-olP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1157" y="275"/>
         </scene>
         <!--Camera-->
         <scene sceneID="QTr-5X-zTY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T8N-j2-e2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController restorationIdentifier="View Controller" storyboardIdentifier="View Controller" title="Camera" id="DU7-iX-WCT" customClass="ViewController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jU1-Uz-TrA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -128,6 +127,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Camera" id="6uA-hT-TD6"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8N-j2-e2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1157" y="-925"/>
         </scene>
@@ -152,6 +152,9 @@
             <point key="canvasLocation" x="327" y="-208"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Graffiti" width="504" height="360"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
