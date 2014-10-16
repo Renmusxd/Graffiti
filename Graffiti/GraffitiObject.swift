@@ -2,6 +2,8 @@
 //  GraffitiObject.swift
 //  Graffiti
 //
+//  An object to hold basic graffiti information
+//
 //  Created by Sumner Hearth on 10/16/14.
 //  Copyright (c) 2014 RenmusLabs. All rights reserved.
 //

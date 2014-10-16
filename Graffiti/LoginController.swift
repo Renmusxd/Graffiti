@@ -21,7 +21,15 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.backgroundColor = UIColorFromRGB(0x8C0606)
+        
+        // If there is a stored username and passhash, attempt to login
+        // if login fails, display screen.
+        // else, skip to next view
+        if false {
+            let vc =
+                self.storyboard?.instantiateViewControllerWithIdentifier("Tab Bar Controller") as TabView
+                self.presentViewController(vc, animated: true, completion: nil)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,16 +41,30 @@ class LoginController: UIViewController {
     @IBOutlet var invalidData : UILabel!
     
     @IBAction func loginButton () {
+        let usr = username.text
+        let passwd = password.text
+        
+        // hash password
+        
+        // send username and password to server for a 24h auth token
+        
+        // if auth token
         if true {
+            // save username and password hash for login later
+            // navigate to next screen
             let vc =
                 self.storyboard?.instantiateViewControllerWithIdentifier("Tab Bar Controller") as TabView
             self.presentViewController(vc, animated: true, completion: nil)
         } else {
+            // display warning
             invalidData.hidden = false
+            // Clear data
+            password.text = ""
         }
     }
     
     @IBAction func registerButton () {
+        // Goto registration page of website
         UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com"))
     }
     

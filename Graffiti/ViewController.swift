@@ -2,6 +2,11 @@
 //  ViewController.swift
 //  Graffiti
 //
+//  This is an object to display graffiti objects in the world
+//  it should use metal or opengl to display the objects at appropriate distance
+//  and orientation based on the camera position (acquired by gps and acc)
+//  It should also display a camera feed underneath
+//
 //  Created by Sumner Hearth on 10/15/14.
 //  Copyright (c) 2014 RenmusLabs. All rights reserved.
 //

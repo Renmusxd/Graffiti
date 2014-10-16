@@ -2,6 +2,9 @@
 //  GraffitiData.swift
 //  Graffiti
 //
+//  A bridge between the graffiti data server and the local device, contains
+//  methods for graffiti querying and gps/acc information
+//
 //  Created by Sumner Hearth on 10/16/14.
 //  Copyright (c) 2014 RenmusLabs. All rights reserved.
 //
