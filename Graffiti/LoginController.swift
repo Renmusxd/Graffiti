@@ -35,6 +35,11 @@ class LoginController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        username.endEditing(true)
+        password.endEditing(true)
+    }
+    
     @IBOutlet var username : UITextField!
     @IBOutlet var password : UITextField!
     
