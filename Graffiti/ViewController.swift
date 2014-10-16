@@ -49,11 +49,11 @@ class ViewController: UIViewController {
     
     // Starts a new camera session
     func beginSession(){
-        configureDevice()
+        //configureDevice()
         
         var err : NSError? = nil
         captureSession.addInput(AVCaptureDeviceInput(device: captureDevice, error: &err))
-        
+        captureSession.sessionPreset = AVCaptureSessionPresetHigh
         if err != nil {
             println("error: \(err?.localizedDescription)")
         }
