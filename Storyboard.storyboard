@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="bvY-37-aNz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="ocE-Eq-vm3">
+            <objects>
+                <viewController id="bvY-37-aNz" customClass="LoginController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s75-vL-NDp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="MwD-JP-D5M">
+                                <rect key="frame" x="16" y="156" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="HrE-1R-p14">
+                                <rect key="frame" x="16" y="194" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eRZ-Hv-jMx">
+                                <rect key="frame" x="266" y="232" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton" destination="bvY-37-aNz" eventType="touchUpInside" id="JqP-Iw-cRy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ck8-w1-RDQ">
+                                <rect key="frame" x="16" y="299" width="288" height="249"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AVA-NM-p5f">
+                                <rect key="frame" x="16" y="232" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButton" destination="bvY-37-aNz" eventType="touchUpInside" id="hkF-OB-opP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ogX-fB-hEf">
+                                <rect key="frame" x="16" y="20" width="288" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username or Password Invalid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kz2-Lf-LDG">
+                                <rect key="frame" x="16" y="270" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="invalidData" destination="Kz2-Lf-LDG" id="Nzp-hm-e52"/>
+                        <outlet property="password" destination="HrE-1R-p14" id="XRX-jc-zkR"/>
+                        <outlet property="username" destination="MwD-JP-D5M" id="C2j-pX-O82"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxJ-Up-Cq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-208"/>
+        </scene>
+        <!--Graffiti-->
+        <scene sceneID="RIY-m4-mXv">
+            <objects>
+                <viewController title="Graffiti" id="UVf-4x-nSJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nre-ge-evc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zU7-jq-VQg" customClass="MyGraffitiController" customModule="Graffiti" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="498"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Graffiti" id="Bdo-7U-dXm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaU-QB-TGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561" y="-320"/>
+        </scene>
+        <!--My Tags-->
+        <scene sceneID="nw0-7o-4vw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WM7-nY-olP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="AzH-2b-zmT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZ6-qH-zLi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ne1-S4-iRu">
+                                <rect key="frame" x="0.0" y="20" width="320" height="498"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Tags" id="iA8-Zb-I6r"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1157" y="275"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="QTr-5X-zTY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8N-j2-e2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController restorationIdentifier="View Controller" storyboardIdentifier="View Controller" title="Camera" id="DU7-iX-WCT" customClass="ViewController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jU1-Uz-TrA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camera" id="6uA-hT-TD6"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1157" y="-925"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8xo-JQ-dhm">
+            <objects>
+                <tabBarController restorationIdentifier="Tab Bar Controller" storyboardIdentifier="Tab Bar Controller" title="Tab Bar Controller" id="cfS-Aa-bWQ" customClass="TabView" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="GFF-3V-5vi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DU7-iX-WCT" kind="relationship" relationship="viewControllers" id="pag-2d-2zU"/>
+                        <segue destination="UVf-4x-nSJ" kind="relationship" relationship="viewControllers" id="ZLb-ZQ-sw7"/>
+                        <segue destination="AzH-2b-zmT" kind="relationship" relationship="viewControllers" id="xgv-Ow-3hp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJ9-vH-kiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="-208"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44279F0919EF661600A41735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44279F0819EF661600A41735 /* AppDelegate.swift */; };
+		44279F0B19EF661600A41735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44279F0A19EF661600A41735 /* ViewController.swift */; };
+		44279F1019EF661600A41735 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44279F0F19EF661600A41735 /* Images.xcassets */; };
+		44279F1319EF661600A41735 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44279F1119EF661600A41735 /* LaunchScreen.xib */; };
+		44279F1F19EF661600A41735 /* GraffitiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44279F1E19EF661600A41735 /* GraffitiTests.swift */; };
+		44A02CD619EF7D77009D73F3 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */; };
+		44A02CD819EF7EF9009D73F3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CD719EF7EF9009D73F3 /* LoginController.swift */; };
+		44A02CDC19EF8192009D73F3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A02CDB19EF8192009D73F3 /* Storyboard.storyboard */; };
+		44A02CDF19EFFCAC009D73F3 /* GraffitiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CDE19EFFCAC009D73F3 /* GraffitiData.swift */; };
+		44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CE219EFFDB1009D73F3 /* GraffitiObject.swift */; };
+		44A02CE519F01B79009D73F3 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CE419F01B79009D73F3 /* TabView.swift */; };
+		44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CE819F01DD6009D73F3 /* TagDB.swift */; };
+		44A02CED19F01E43009D73F3 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */; };
+		44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEE19F01E80009D73F3 /* MyTagController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44279F1919EF661600A41735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44279EFB19EF661600A41735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44279F0219EF661600A41735;
+			remoteInfo = Graffiti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44279F0319EF661600A41735 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44279F0719EF661600A41735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44279F0819EF661600A41735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44279F0A19EF661600A41735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44279F0F19EF661600A41735 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44279F1219EF661600A41735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		44279F1819EF661600A41735 /* GraffitiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44279F1D19EF661600A41735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44279F1E19EF661600A41735 /* GraffitiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiTests.swift; sourceTree = "<group>"; };
+		44A02CD519EF7D77009D73F3 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		44A02CD719EF7EF9009D73F3 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		44A02CDB19EF8192009D73F3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		44A02CDE19EFFCAC009D73F3 /* GraffitiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiData.swift; sourceTree = "<group>"; };
+		44A02CE219EFFDB1009D73F3 /* GraffitiObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiObject.swift; sourceTree = "<group>"; };
+		44A02CE419F01B79009D73F3 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		44A02CE819F01DD6009D73F3 /* TagDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDB.swift; sourceTree = "<group>"; };
+		44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
+		44A02CEE19F01E80009D73F3 /* MyTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTagController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44279F0019EF661600A41735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44279F1519EF661600A41735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44279EFA19EF661600A41735 = {
+			isa = PBXGroup;
+			children = (
+				44279F0519EF661600A41735 /* Graffiti */,
+				44279F1B19EF661600A41735 /* GraffitiTests */,
+				44279F0419EF661600A41735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44279F0419EF661600A41735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44279F0319EF661600A41735 /* Graffiti.app */,
+				44279F1819EF661600A41735 /* GraffitiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44279F0519EF661600A41735 /* Graffiti */ = {
+			isa = PBXGroup;
+			children = (
+				44279F0819EF661600A41735 /* AppDelegate.swift */,
+				44A02CDE19EFFCAC009D73F3 /* GraffitiData.swift */,
+				44A02CE819F01DD6009D73F3 /* TagDB.swift */,
+				44A02CE219EFFDB1009D73F3 /* GraffitiObject.swift */,
+				44279F0A19EF661600A41735 /* ViewController.swift */,
+				44A02CD719EF7EF9009D73F3 /* LoginController.swift */,
+				44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */,
+				44A02CEE19F01E80009D73F3 /* MyTagController.swift */,
+				44A02CE419F01B79009D73F3 /* TabView.swift */,
+				44A02CDB19EF8192009D73F3 /* Storyboard.storyboard */,
+				44279F0F19EF661600A41735 /* Images.xcassets */,
+				44279F1119EF661600A41735 /* LaunchScreen.xib */,
+				44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */,
+				44279F0619EF661600A41735 /* Supporting Files */,
+			);
+			path = Graffiti;
+			sourceTree = "<group>";
+		};
+		44279F0619EF661600A41735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44279F0719EF661600A41735 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44279F1B19EF661600A41735 /* GraffitiTests */ = {
+			isa = PBXGroup;
+			children = (
+				44279F1E19EF661600A41735 /* GraffitiTests.swift */,
+				44279F1C19EF661600A41735 /* Supporting Files */,
+			);
+			path = GraffitiTests;
+			sourceTree = "<group>";
+		};
+		44279F1C19EF661600A41735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44279F1D19EF661600A41735 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44279F0219EF661600A41735 /* Graffiti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44279F2219EF661600A41735 /* Build configuration list for PBXNativeTarget "Graffiti" */;
+			buildPhases = (
+				44279EFF19EF661600A41735 /* Sources */,
+				44279F0019EF661600A41735 /* Frameworks */,
+				44279F0119EF661600A41735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graffiti;
+			productName = Graffiti;
+			productReference = 44279F0319EF661600A41735 /* Graffiti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44279F1719EF661600A41735 /* GraffitiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44279F2519EF661600A41735 /* Build configuration list for PBXNativeTarget "GraffitiTests" */;
+			buildPhases = (
+				44279F1419EF661600A41735 /* Sources */,
+				44279F1519EF661600A41735 /* Frameworks */,
+				44279F1619EF661600A41735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44279F1A19EF661600A41735 /* PBXTargetDependency */,
+			);
+			name = GraffitiTests;
+			productName = GraffitiTests;
+			productReference = 44279F1819EF661600A41735 /* GraffitiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44279EFB19EF661600A41735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = RenmusLabs;
+				TargetAttributes = {
+					44279F0219EF661600A41735 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					44279F1719EF661600A41735 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 44279F0219EF661600A41735;
+					};
+				};
+			};
+			buildConfigurationList = 44279EFE19EF661600A41735 /* Build configuration list for PBXProject "Graffiti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44279EFA19EF661600A41735;
+			productRefGroup = 44279F0419EF661600A41735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44279F0219EF661600A41735 /* Graffiti */,
+				44279F1719EF661600A41735 /* GraffitiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44279F0119EF661600A41735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44279F1319EF661600A41735 /* LaunchScreen.xib in Resources */,
+				44279F1019EF661600A41735 /* Images.xcassets in Resources */,
+				44A02CDC19EF8192009D73F3 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44279F1619EF661600A41735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44279EFF19EF661600A41735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44279F0B19EF661600A41735 /* ViewController.swift in Sources */,
+				44A02CED19F01E43009D73F3 /* MyGraffitiController.swift in Sources */,
+				44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */,
+				44A02CD819EF7EF9009D73F3 /* LoginController.swift in Sources */,
+				44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */,
+				44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */,
+				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
+				44A02CE519F01B79009D73F3 /* TabView.swift in Sources */,
+				44A02CD619EF7D77009D73F3 /* UserModel.xcdatamodeld in Sources */,
+				44A02CDF19EFFCAC009D73F3 /* GraffitiData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44279F1419EF661600A41735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44279F1F19EF661600A41735 /* GraffitiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44279F1A19EF661600A41735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44279F0219EF661600A41735 /* Graffiti */;
+			targetProxy = 44279F1919EF661600A41735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44279F1119EF661600A41735 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44279F1219EF661600A41735 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44279F2019EF661600A41735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44279F2119EF661600A41735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44279F2319EF661600A41735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffiti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		44279F2419EF661600A41735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffiti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		44279F2619EF661600A41735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraffitiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffiti.app/Graffiti";
+			};
+			name = Debug;
+		};
+		44279F2719EF661600A41735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraffitiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffiti.app/Graffiti";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44279EFE19EF661600A41735 /* Build configuration list for PBXProject "Graffiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44279F2019EF661600A41735 /* Debug */,
+				44279F2119EF661600A41735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44279F2219EF661600A41735 /* Build configuration list for PBXNativeTarget "Graffiti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44279F2319EF661600A41735 /* Debug */,
+				44279F2419EF661600A41735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44279F2519EF661600A41735 /* Build configuration list for PBXNativeTarget "GraffitiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44279F2619EF661600A41735 /* Debug */,
+				44279F2719EF661600A41735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44A02CD519EF7D77009D73F3 /* UserModel.xcdatamodel */,
+			);
+			currentVersion = 44A02CD519EF7D77009D73F3 /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44279EFB19EF661600A41735 /* Project object */;
+}
