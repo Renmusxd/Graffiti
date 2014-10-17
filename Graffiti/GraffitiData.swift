@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class GraffitiData: NSObject {
    
@@ -32,6 +33,10 @@ class GraffitiData: NSObject {
     // Adds grafiti to the world, returns id
     func addGrafiti(graffiti : GraffitiObject) -> String{
         return ""
+    }
+    
+    func getLocation() {
+        
     }
     
 }
