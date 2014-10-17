@@ -11,9 +11,26 @@
 
 import UIKit
 import CoreLocation
+import CoreMotion
 
-class GraffitiData: NSObject {
+class GraffitiData: NSObject, CLLocationManagerDelegate {
    
+    var manager : CLLocationManager!
+    
+    func setup(){
+        manager = CLLocationManager()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestAlwaysAuthorization()
+        manager.startUpdatingLocation()
+        println("Setup")
+    }
+    
+    func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
+        println("locations = \(locations)")
+    }
+    
+    
     var local_graffiti : [GraffitiObject] = []
     
     // Pull local graffiti from server (even not visible)

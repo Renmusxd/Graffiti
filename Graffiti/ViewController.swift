@@ -18,16 +18,14 @@ class ViewController: UIViewController {
 
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
-    var locMan : LocationManager!
+    
+    var myGraffitiDatabase = GraffitiData()
     
     // If we find a device we'll store it here for later use
     var captureDevice : AVCaptureDevice?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locMan = LocationManager()
-        locMan.setup()
         
         captureSession.sessionPreset = AVCaptureSessionPresetLow
         let devices = AVCaptureDevice.devices()
@@ -46,7 +44,7 @@ class ViewController: UIViewController {
         // Now that we have a video device
         if captureDevice != nil {
             beginSession()
-            
+            myGraffitiDatabase.setup()
         } else {
             // This means it cannot find a camera
             // WTF?
