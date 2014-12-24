@@ -13,11 +13,14 @@ import UIKit
 import CoreLocation
 import CoreMotion
 
+var myGraffitiDatabase = GraffitiData()
+
 class GraffitiData: NSObject, CLLocationManagerDelegate {
-   
+    var username : String!
+    var passhash : String!
     var manager : CLLocationManager!
     
-    func setup(){
+    func setup(usr : String, pHash : String){
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest

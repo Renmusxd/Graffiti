@@ -40,6 +40,14 @@ class LoginController: UIViewController {
         password.endEditing(true)
     }
     
+    func setupGraffiti (){
+        myGraffitiDatabase.setup(username.text, pHash: hash(password.text))
+    }
+    
+    func hash (s : String) -> String {
+        return s
+    }
+    
     @IBOutlet var username : UITextField!
     @IBOutlet var password : UITextField!
     
@@ -70,7 +78,7 @@ class LoginController: UIViewController {
     
     @IBAction func registerButton () {
         // Goto registration page of website
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com"))
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com")!)
     }
     
 }
