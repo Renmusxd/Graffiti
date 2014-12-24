@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     // If we find a device we'll store it here for later use
     var captureDevice : AVCaptureDevice?
     
+    // On view loading, find camera
     override func viewDidLoad() {
         super.viewDidLoad()
         
