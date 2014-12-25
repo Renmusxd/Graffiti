@@ -28,6 +28,7 @@
 		B2167DDE1A4B92E900A67FD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DDD1A4B92E900A67FD9 /* UIKit.framework */; };
 		B2167E451A4C07A400A67FD9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2167E441A4C07A400A67FD9 /* CameraViewController.swift */; };
 		B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC31A4C0EC1001C7298 /* NavController.swift */; };
+		B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC51A4CA3AF001C7298 /* CanvasController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		B2167DDD1A4B92E900A67FD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B2167E441A4C07A400A67FD9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B225DBC31A4C0EC1001C7298 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		B225DBC51A4CA3AF001C7298 /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */,
 				44279F0619EF661600A41735 /* Supporting Files */,
 				B225DBC31A4C0EC1001C7298 /* NavController.swift */,
+				B225DBC51A4CA3AF001C7298 /* CanvasController.swift */,
 			);
 			path = Graffiti;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */,
 				44A02CD819EF7EF9009D73F3 /* LoginController.swift in Sources */,
 				44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */,
+				B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */,
 				B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */,
 				44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */,
 				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
