@@ -13,11 +13,20 @@ import UIKit
 import CoreLocation
 import CoreMotion
 
+var myGraffitiDatabase = GraffitiData()
+
 class GraffitiData: NSObject, CLLocationManagerDelegate {
-   
+    var username : String!
+    var passhash : String!
     var manager : CLLocationManager!
     
-    func setup(){
+    func setup(usr : String, pHash : String){
+        // Setup includes:
+        //   Getting location manager
+        //   Setting the delegate (To send the correct location information)
+        //   Increasing accuracy
+        //   Requesting user authorization
+        //   Starting location services
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -27,10 +36,12 @@ class GraffitiData: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(manager:CLLocationManager, didUpdateLocations locations:[AnyObject]) {
+        // Every time the location is updated, it will send the updated information here
         println("locations = \(locations)")
     }
     
     
+    // List of objects within range
     var local_graffiti : [GraffitiObject] = []
     
     // Pull local graffiti from server (even not visible)
@@ -44,7 +55,7 @@ class GraffitiData: NSObject, CLLocationManagerDelegate {
         return []
     }
     
-    // Like a graffiti
+    // "Like" a graffiti
     func plusGraffiti(id : String){}
     
     // Adds grafiti to the world, returns id
@@ -52,6 +63,7 @@ class GraffitiData: NSObject, CLLocationManagerDelegate {
         return ""
     }
     
+    // Returns most recent location
     func getLocation() {
         
     }
