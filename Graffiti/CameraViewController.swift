@@ -15,10 +15,13 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController {
-
+    //Why do I need this
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    
+    
 
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
@@ -27,7 +30,9 @@ class CameraViewController: UIViewController {
     var captureDevice : AVCaptureDevice?
     
     
-    @IBOutlet weak var navBar: UINavigationItem!
+    
+   
+    
     // On view loading, find camera
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +121,14 @@ class CameraViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    //Sends the viewcontroller to the canvas scene
+    @IBAction func toCanvas(sender: UIButton) {
+        self.performSegueWithIdentifier("camToCanvas", sender: sender)
+        
+        
+    }
+    
+    
 }
 

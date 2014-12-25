@@ -127,9 +127,36 @@
                     <view key="view" contentMode="scaleToFill" id="4uK-IT-qwL">
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dZf-EH-VYO" customClass="DrawView" customModule="Graffiti" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ePp-YF-BrQ">
+                                <rect key="frame" x="143" y="54" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveImage" destination="e8Y-g9-gUA" eventType="touchUpInside" id="1vP-g1-Aya"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bkx-oF-Nzw"/>
+                    <navigationItem key="navigationItem" id="Bkx-oF-Nzw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="IGA-Wg-DkT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vpE-Lf-vIE">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <attributedString key="userComments">
                         <fragment>
                             <string key="content">Canvas, where people will draw stuff. Once they are finished, they can place their graffiti in this same (or probably a different) controller. Will have a button that allows left segue to "saved graffiti," which can be loaded into the canvas and either edited or used straight up. </string>
@@ -180,7 +207,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8oY-xI-HdT"/>
+                    <navigationItem key="navigationItem" id="8oY-xI-HdT">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="PQY-XA-WWo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="og8-p4-loF">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Spray it bitch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toCanvas:" destination="g1Z-V6-ezx" eventType="touchUpInside" id="5Cf-kd-3FE"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="canvasButton:" destination="g1Z-V6-ezx" id="QP1-H8-ACD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="DU5-00-7cf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l7B-AE-m8E">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="idk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <attributedString key="userComments">
                         <fragment>
                             <string key="content">This is the main camera controller for the app, and the root of the app itself. This will show the view through the phone camera, displaying the world and graffiti. Transitions left to canvas and right to tags/likes/friends/settings/crap</string>
@@ -191,7 +243,6 @@
                         </fragment>
                     </attributedString>
                     <connections>
-                        <outlet property="navBar" destination="8oY-xI-HdT" id="vha-rY-fi2"/>
                         <segue destination="e8Y-g9-gUA" kind="push" identifier="camToCanvas" id="mFJ-0D-ryf"/>
                         <segue destination="4hv-yy-QPA" kind="push" identifier="camToWut" id="nNY-MI-IzL"/>
                     </connections>

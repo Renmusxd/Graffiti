@@ -29,6 +29,8 @@
 		B2167E451A4C07A400A67FD9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2167E441A4C07A400A67FD9 /* CameraViewController.swift */; };
 		B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC31A4C0EC1001C7298 /* NavController.swift */; };
 		B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC51A4CA3AF001C7298 /* CanvasController.swift */; };
+		B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC71A4CC948001C7298 /* DrawView.swift */; };
+		B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCA1A4CCB30001C7298 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		B2167E441A4C07A400A67FD9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B225DBC31A4C0EC1001C7298 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		B225DBC51A4CA3AF001C7298 /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
+		B225DBC71A4CC948001C7298 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		B225DBCA1A4CCB30001C7298 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		44279F0519EF661600A41735 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
+				B225DBC91A4CCB16001C7298 /* DrawElements */,
 				B2167E441A4C07A400A67FD9 /* CameraViewController.swift */,
 				44279F0819EF661600A41735 /* AppDelegate.swift */,
 				44A02CDE19EFFCAC009D73F3 /* GraffitiData.swift */,
@@ -128,6 +133,7 @@
 				44A02CE219EFFDB1009D73F3 /* GraffitiObject.swift */,
 				44A02CD719EF7EF9009D73F3 /* LoginController.swift */,
 				44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */,
+				B225DBC51A4CA3AF001C7298 /* CanvasController.swift */,
 				44A02CEE19F01E80009D73F3 /* MyTagController.swift */,
 				44A02CE419F01B79009D73F3 /* TabView.swift */,
 				44A02CDB19EF8192009D73F3 /* Storyboard.storyboard */,
@@ -136,7 +142,7 @@
 				44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */,
 				44279F0619EF661600A41735 /* Supporting Files */,
 				B225DBC31A4C0EC1001C7298 /* NavController.swift */,
-				B225DBC51A4CA3AF001C7298 /* CanvasController.swift */,
+				B225DBC71A4CC948001C7298 /* DrawView.swift */,
 			);
 			path = Graffiti;
 			sourceTree = "<group>";
@@ -164,6 +170,14 @@
 				44279F1D19EF661600A41735 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B225DBC91A4CCB16001C7298 /* DrawElements */ = {
+			isa = PBXGroup;
+			children = (
+				B225DBCA1A4CCB30001C7298 /* Line.swift */,
+			);
+			name = DrawElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +287,11 @@
 				44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */,
 				44A02CD819EF7EF9009D73F3 /* LoginController.swift in Sources */,
 				44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */,
+				B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */,
 				B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */,
 				B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */,
 				44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */,
+				B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */,
 				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
 				44A02CE519F01B79009D73F3 /* TabView.swift in Sources */,
 				44A02CD619EF7D77009D73F3 /* UserModel.xcdatamodeld in Sources */,
