@@ -1,24 +1,25 @@
 //
-//  CanvasController.swift
+//  NavController.swift
 //  Graffiti
 //
-//  Created by G Mulitz on 12/24/14.
+//  Created by G Mulitz on 12/25/14.
 //  Copyright (c) 2014 RenmusLabs. All rights reserved.
 //
 
 import UIKit
 
-class CanvasController: UIViewController {
+class NavController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.translucent = true
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
         // Dispose of any resources that can be recreated.
     }
     

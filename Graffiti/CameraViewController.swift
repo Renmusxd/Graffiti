@@ -16,12 +16,18 @@ import AVFoundation
 
 class CameraViewController: UIViewController {
 
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
     
     // If we find a device we'll store it here for later use
     var captureDevice : AVCaptureDevice?
     
+    
+    @IBOutlet weak var navBar: UINavigationItem!
     // On view loading, find camera
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +36,12 @@ class CameraViewController: UIViewController {
         let devices = AVCaptureDevice.devices()
         // Loop through all the capture devices on this phone
         println(devices)
+        
+        
+        //deal with navigation bar transparency
+        
+        
+        
         
         for device in devices {
             // Make sure this particular device supports video

@@ -65,135 +65,168 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <attributedString key="userComments">
+                        <fragment content="Login controller, basic stuff. Segues directly to the main navigation controller for the app">
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <connections>
                         <outlet property="invalidData" destination="Kz2-Lf-LDG" id="Nzp-hm-e52"/>
                         <outlet property="password" destination="HrE-1R-p14" id="XRX-jc-zkR"/>
                         <outlet property="username" destination="MwD-JP-D5M" id="C2j-pX-O82"/>
-                        <segue destination="1BV-gL-lsY" kind="modal" identifier="loginSegue" id="Pc5-n3-dxi"/>
+                        <segue destination="03F-MG-AKS" kind="modal" identifier="loginSegue" id="HZT-1w-D7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxJ-Up-Cq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1395" y="-1494"/>
+            <point key="canvasLocation" x="-853" y="-1708"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Ylr-HZ-MBc">
+            <objects>
+                <tableViewController id="KBx-2p-dzH" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lr5-Rh-ELy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jwf-dz-zlr">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jwf-dz-zlr" id="3y0-aV-tdH">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KBx-2p-dzH" id="02S-bn-mmb"/>
+                            <outlet property="delegate" destination="KBx-2p-dzH" id="N3y-HL-lzz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Oy2-2G-MWz"/>
+                    <attributedString key="userComments">
+                        <fragment>
+                            <string key="content">The "saved graffiti" tableview controller, which shows a preview of each saved graffiti item, expands and allows the user to select and use on the canvas.</string>
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylu-Ce-iVf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1918" y="86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Id-xF-nad">
+            <objects>
+                <viewController id="e8Y-g9-gUA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4uK-IT-qwL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bkx-oF-Nzw"/>
+                    <attributedString key="userComments">
+                        <fragment>
+                            <string key="content">Canvas, where people will draw stuff. Once they are finished, they can place their graffiti in this same (or probably a different) controller. Will have a button that allows left segue to "saved graffiti," which can be loaded into the canvas and either edited or used straight up. </string>
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <connections>
+                        <segue destination="KBx-2p-dzH" kind="push" identifier="canvToSaved" id="2k7-HX-Uu5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0X-qN-oBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1414" y="86"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="yiR-uf-eYK">
+            <objects>
+                <navigationController id="03F-MG-AKS" customClass="NavController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qwc-St-VA3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <attributedString key="userComments">
+                        <fragment content="Navigation controller, move on">
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <connections>
+                        <segue destination="g1Z-V6-ezx" kind="relationship" relationship="rootViewController" id="sp3-0A-W88"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PDc-3R-eo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-853" y="-766"/>
         </scene>
         <!--Camera View Controller-->
-        <scene sceneID="y8e-o2-ME9">
+        <scene sceneID="8jk-Yc-WCH">
             <objects>
-                <viewController id="1BV-gL-lsY" customClass="CameraViewController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jZx-dv-YvW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController id="g1Z-V6-ezx" customClass="CameraViewController" customModule="Graffiti" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="by4-2K-meb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lTK-Jb-NBW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tOX-07-v4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-737" y="-1494"/>
-        </scene>
-        <!--Graffiti-->
-        <scene sceneID="RIY-m4-mXv">
-            <objects>
-                <viewController title="Graffiti" id="UVf-4x-nSJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nre-ge-evc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zU7-jq-VQg" customClass="MyGraffitiController" customModule="Graffiti" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="320" height="498"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Graffiti" image="circle" selectedImage="circle" id="Bdo-7U-dXm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AaU-QB-TGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1157" y="216"/>
-        </scene>
-        <!--My Tags-->
-        <scene sceneID="nw0-7o-4vw">
-            <objects>
-                <viewController id="AzH-2b-zmT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lZ6-qH-zLi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ne1-S4-iRu">
-                                <rect key="frame" x="0.0" y="20" width="320" height="498"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Tags" image="circle" selectedImage="circle" id="iA8-Zb-I6r"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WM7-nY-olP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1157" y="1019"/>
-        </scene>
-        <!--Canvas Controller-->
-        <scene sceneID="Ubc-FI-1E1">
-            <objects>
-                <viewController storyboardIdentifier="Canvas" title="Canvas Controller" id="Q6A-3g-6uw" customClass="CanvasController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qhr-0K-ybJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ye1-BF-QTm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cab-8e-Ecx" userLabel="Canvas"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YzL-ZQ-Yhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1157" y="-1790"/>
-        </scene>
-        <!--Graffiti Information Panel-->
-        <scene sceneID="Aml-nS-Bgo">
-            <objects>
-                <viewController title="Graffiti Information Panel" id="z4H-Op-uJK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yPf-nI-K6Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9AV-UP-7qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2283" y="-129"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="8xo-JQ-dhm">
-            <objects>
-                <tabBarController restorationIdentifier="Tab Bar Controller" storyboardIdentifier="Tab Bar Controller" title="Tab Bar Controller" id="cfS-Aa-bWQ" customClass="TabView" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="GFF-3V-5vi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
+                    <navigationItem key="navigationItem" id="8oY-xI-HdT"/>
+                    <attributedString key="userComments">
+                        <fragment>
+                            <string key="content">This is the main camera controller for the app, and the root of the app itself. This will show the view through the phone camera, displaying the world and graffiti. Transitions left to canvas and right to tags/likes/friends/settings/crap</string>
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <connections>
-                        <segue destination="UVf-4x-nSJ" kind="relationship" relationship="viewControllers" id="ZLb-ZQ-sw7"/>
-                        <segue destination="AzH-2b-zmT" kind="relationship" relationship="viewControllers" id="xgv-Ow-3hp"/>
-                        <segue destination="Q6A-3g-6uw" kind="relationship" relationship="viewControllers" id="nCC-Kr-zJz"/>
+                        <outlet property="navBar" destination="8oY-xI-HdT" id="vha-rY-fi2"/>
+                        <segue destination="e8Y-g9-gUA" kind="push" identifier="camToCanvas" id="mFJ-0D-ryf"/>
+                        <segue destination="4hv-yy-QPA" kind="push" identifier="camToWut" id="nNY-MI-IzL"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BJ9-vH-kiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZO-9I-vok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593" y="-328"/>
+            <point key="canvasLocation" x="-853" y="86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2r1-JU-3vt">
+            <objects>
+                <viewController id="4hv-yy-QPA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TMd-b2-xGh">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ItS-9n-c8e"/>
+                    <attributedString key="userComments">
+                        <fragment>
+                            <string key="content">What goes here even? Snapchat has friends in this general area, tinder has all previous matches. We should probably have something like "graffiti you liked"/"user preferences"/"friends"</string>
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qC-VC-HLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-208" y="86"/>
         </scene>
     </scenes>
     <resources>
         <image name="Graffiti" width="504" height="360"/>
-        <image name="circle" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
