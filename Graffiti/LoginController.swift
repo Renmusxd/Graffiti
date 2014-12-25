@@ -70,7 +70,7 @@ class LoginController: UIViewController {
     
     @IBAction func registerButton () {
         // Goto registration page of website
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com"))
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com")!)
     }
     
 }

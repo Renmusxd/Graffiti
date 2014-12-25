@@ -21,6 +21,8 @@
 		44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CE819F01DD6009D73F3 /* TagDB.swift */; };
 		44A02CED19F01E43009D73F3 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */; };
 		44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEE19F01E80009D73F3 /* MyTagController.swift */; };
+		B2167DD21A4A9B5D00A67FD9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DD11A4A9B5D00A67FD9 /* OpenGLES.framework */; };
+		B2167DD41A4A9B6600A67FD9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DD31A4A9B6600A67FD9 /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		44A02CE819F01DD6009D73F3 /* TagDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDB.swift; sourceTree = "<group>"; };
 		44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
 		44A02CEE19F01E80009D73F3 /* MyTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTagController.swift; sourceTree = "<group>"; };
+		B2167DD11A4A9B5D00A67FD9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B2167DD31A4A9B6600A67FD9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2167DD41A4A9B6600A67FD9 /* GLKit.framework in Frameworks */,
+				B2167DD21A4A9B5D00A67FD9 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,8 @@
 		44279EFA19EF661600A41735 = {
 			isa = PBXGroup;
 			children = (
+				B2167DD31A4A9B6600A67FD9 /* GLKit.framework */,
+				B2167DD11A4A9B5D00A67FD9 /* OpenGLES.framework */,
 				44279F0519EF661600A41735 /* Graffiti */,
 				44279F1B19EF661600A41735 /* GraffitiTests */,
 				44279F0419EF661600A41735 /* Products */,

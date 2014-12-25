@@ -12,9 +12,11 @@ import UIKit
 
 class GraffitiObject: NSObject {
     var id : String = ""
-    // pos:     lat    long    h    theta   phi
-    var pos : (Float, Float, Float, Float, Float) = (0,0,0,0,0)
+    // pos:     lat    long    h
+    var pos : (Float, Float, Float) = (0,0,0)
     
+    //Normal vector to plane of image
+    var norm : (Float,Float,Float) = (0,0,0)
     // image data
     // ...
 }
