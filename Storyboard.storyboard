@@ -69,11 +69,27 @@
                         <outlet property="invalidData" destination="Kz2-Lf-LDG" id="Nzp-hm-e52"/>
                         <outlet property="password" destination="HrE-1R-p14" id="XRX-jc-zkR"/>
                         <outlet property="username" destination="MwD-JP-D5M" id="C2j-pX-O82"/>
+                        <segue destination="1BV-gL-lsY" kind="modal" identifier="loginSegue" id="Pc5-n3-dxi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxJ-Up-Cq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-93" y="-208"/>
+            <point key="canvasLocation" x="-1395" y="-1494"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="y8e-o2-ME9">
+            <objects>
+                <viewController id="1BV-gL-lsY" customClass="CameraViewController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZx-dv-YvW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lTK-Jb-NBW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOX-07-v4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-737" y="-1494"/>
         </scene>
         <!--Graffiti-->
         <scene sceneID="RIY-m4-mXv">
@@ -95,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaU-QB-TGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="-320"/>
+            <point key="canvasLocation" x="1157" y="216"/>
         </scene>
         <!--My Tags-->
         <scene sceneID="nw0-7o-4vw">
@@ -117,43 +133,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WM7-nY-olP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1157" y="275"/>
+            <point key="canvasLocation" x="1157" y="1019"/>
         </scene>
-        <!--Canvas-->
-        <scene sceneID="qUA-Vw-92x">
+        <!--Canvas Controller-->
+        <scene sceneID="Ubc-FI-1E1">
             <objects>
-                <viewController title="Canvas" id="sfu-Ee-1V4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sJ0-PU-4gm">
+                <viewController storyboardIdentifier="Canvas" title="Canvas Controller" id="Q6A-3g-6uw" customClass="CanvasController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qhr-0K-ybJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ATx-3p-rQJ">
-                                <rect key="frame" x="0.0" y="-54" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ye1-BF-QTm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Canvas" id="9q5-hK-hpY"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="cab-8e-Ecx" userLabel="Canvas"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bYo-cg-uFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzL-ZQ-Yhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="-1119"/>
-        </scene>
-        <!--Camera-->
-        <scene sceneID="QTr-5X-zTY">
-            <objects>
-                <viewController restorationIdentifier="View Controller" storyboardIdentifier="View Controller" title="Camera" id="DU7-iX-WCT" customClass="ViewController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jU1-Uz-TrA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="circle" selectedImage="circle" id="6uA-hT-TD6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T8N-j2-e2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1157" y="-925"/>
+            <point key="canvasLocation" x="1157" y="-1790"/>
         </scene>
         <!--Graffiti Information Panel-->
         <scene sceneID="Aml-nS-Bgo">
@@ -167,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9AV-UP-7qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563" y="-929"/>
+            <point key="canvasLocation" x="2283" y="-129"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8xo-JQ-dhm">
@@ -180,15 +181,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DU7-iX-WCT" kind="relationship" relationship="viewControllers" id="pag-2d-2zU"/>
                         <segue destination="UVf-4x-nSJ" kind="relationship" relationship="viewControllers" id="ZLb-ZQ-sw7"/>
                         <segue destination="AzH-2b-zmT" kind="relationship" relationship="viewControllers" id="xgv-Ow-3hp"/>
-                        <segue destination="sfu-Ee-1V4" kind="relationship" relationship="viewControllers" id="sIu-6W-Maz"/>
+                        <segue destination="Q6A-3g-6uw" kind="relationship" relationship="viewControllers" id="nCC-Kr-zJz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJ9-vH-kiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="-208"/>
+            <point key="canvasLocation" x="-593" y="-328"/>
         </scene>
     </scenes>
     <resources>

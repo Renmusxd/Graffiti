@@ -64,10 +64,11 @@ class LoginController: UIViewController {
         // if auth token
         if true {
             // save username and password hash for login later
-            // navigate to next screen
+            /*// navigate to next screen
             let vc =
                 self.storyboard?.instantiateViewControllerWithIdentifier("Tab Bar Controller") as TabView
-            self.presentViewController(vc, animated: true, completion: nil)
+            self.presentViewController(vc, animated: true, completion: nil)*/
+            self.performSegueWithIdentifier("loginSegue", sender:nil)
         } else {
             // display warning
             invalidData.hidden = false
@@ -79,6 +80,12 @@ class LoginController: UIViewController {
     @IBAction func registerButton () {
         // Goto registration page of website
         UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com")!)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
     }
     
 }

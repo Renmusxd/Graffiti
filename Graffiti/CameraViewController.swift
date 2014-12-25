@@ -14,7 +14,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class CameraViewController: UIViewController {
 
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
