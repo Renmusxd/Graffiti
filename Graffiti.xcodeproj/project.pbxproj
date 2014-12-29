@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44012C681A520EFC00D5E0C6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44012C671A520EFC00D5E0C6 /* opencv2.framework */; };
+		44012C691A520EFC00D5E0C6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44012C671A520EFC00D5E0C6 /* opencv2.framework */; };
 		44279F0919EF661600A41735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44279F0819EF661600A41735 /* AppDelegate.swift */; };
 		44279F1019EF661600A41735 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44279F0F19EF661600A41735 /* Images.xcassets */; };
 		44279F1319EF661600A41735 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44279F1119EF661600A41735 /* LaunchScreen.xib */; };
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44012C671A520EFC00D5E0C6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		44279F0319EF661600A41735 /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44279F0719EF661600A41735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44279F0819EF661600A41735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2167DDE1A4B92E900A67FD9 /* UIKit.framework in Frameworks */,
+				44012C681A520EFC00D5E0C6 /* opencv2.framework in Frameworks */,
 				B2167DDC1A4B92DC00A67FD9 /* Foundation.framework in Frameworks */,
 				B2167DDA1A4B92D400A67FD9 /* CoreGraphics.framework in Frameworks */,
 				B2167DD81A4B92A800A67FD9 /* Twitter.framework in Frameworks */,
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44012C691A520EFC00D5E0C6 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +106,7 @@
 		44279EFA19EF661600A41735 = {
 			isa = PBXGroup;
 			children = (
+				44012C671A520EFC00D5E0C6 /* opencv2.framework */,
 				B2167DDD1A4B92E900A67FD9 /* UIKit.framework */,
 				B2167DDB1A4B92DC00A67FD9 /* Foundation.framework */,
 				B2167DD91A4B92D400A67FD9 /* CoreGraphics.framework */,
@@ -229,11 +235,11 @@
 				TargetAttributes = {
 					44279F0219EF661600A41735 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = N674K3JR76;
+						DevelopmentTeam = X6JQ9K777A;
 					};
 					44279F1719EF661600A41735 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = N674K3JR76;
+						DevelopmentTeam = X6JQ9K777A;
 						TestTargetID = 44279F0219EF661600A41735;
 					};
 				};
@@ -411,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Graffiti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Graffiti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +449,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -454,6 +469,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GraffitiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
