@@ -42,13 +42,17 @@ class DrawView: UIView {
         path.lineWidth = lineWidth;
         path.lineCapStyle = kCGLineCapRound
         
+        
+        
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 1.0)
         var rectpath = UIBezierPath(rect: self.bounds)
         UIColor.whiteColor().setFill()
-        rectpath.fill()
         cachedImage.drawAtPoint(CGPointZero)
+        rectpath.fill()
+        
         cachedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
     }
     
     

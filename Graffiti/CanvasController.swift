@@ -25,7 +25,13 @@ class CanvasController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //strange thing I have to do to get 
+        //the drawer to behave properly on the first swipe
+        //just simulates a tap
+        var fucker = NSMutableSet()
+        fucker.addObject(UITouch())
+        touchesBegan(fucker, withEvent: UIEvent())
+        touchesEnded(fucker, withEvent: UIEvent())
     }
 
     override func didReceiveMemoryWarning() {
