@@ -34,6 +34,7 @@
 		B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC71A4CC948001C7298 /* DrawView.swift */; };
 		B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCA1A4CCB30001C7298 /* Line.swift */; };
 		B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCC1A520630001C7298 /* CatmullRom.swift */; };
+		B225DBCF1A527A22001C7298 /* PaintOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCE1A527A22001C7298 /* PaintOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		B225DBC71A4CC948001C7298 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		B225DBCA1A4CCB30001C7298 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B225DBCC1A520630001C7298 /* CatmullRom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
+		B225DBCE1A527A22001C7298 /* PaintOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				44279F0619EF661600A41735 /* Supporting Files */,
 				B225DBC31A4C0EC1001C7298 /* NavController.swift */,
 				B225DBC71A4CC948001C7298 /* DrawView.swift */,
+				B225DBCE1A527A22001C7298 /* PaintOptionView.swift */,
 			);
 			path = Graffiti;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B225DBCF1A527A22001C7298 /* PaintOptionView.swift in Sources */,
 				B2167E451A4C07A400A67FD9 /* CameraViewController.swift in Sources */,
 				44A02CED19F01E43009D73F3 /* MyGraffitiController.swift in Sources */,
 				44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */,

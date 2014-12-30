@@ -10,6 +10,18 @@ import UIKit
 
 class CanvasController: UIViewController {
 
+    @IBOutlet weak var drawView: DrawView!
+    
+    
+    @IBOutlet weak var saveButton: UIButton!
+    
+    @IBOutlet weak var useButton: UIButton!
+    
+    @IBOutlet weak var widthControl: UISlider!
+    
+    @IBOutlet weak var colorControl: UISlider!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,13 +33,57 @@ class CanvasController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func saveImage(){
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.hideControls()
         
+        drawView.touchesBegan(touches, withEvent: event)
+        
+    }
+    
+    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
+        drawView.touchesMoved(touches, withEvent: event)
+    }
+    
+    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        self.showControls()
+        drawView.touchesEnded(touches, withEvent: event)
+    }
+    
+    @IBAction func saveImage(sender: AnyObject) {
+    }
+    
+    @IBAction func useDrawnImage(sender: AnyObject) {
     }
     
     
     
+    @IBAction func widthSlider(sender: UISlider) {
+        drawView.changeWidth(CGFloat(sender.value)*6+1)
+    }
+    
+    @IBAction func colorSlider(sender: UISlider) {
+        drawView.changeColor(CGFloat(sender.value))
+    }
+    
 
+    
+    
+    
+    func hideControls(){
+        saveButton.hidden = true;
+        useButton.hidden = true;
+        widthControl.hidden = true;
+        colorControl.hidden = true;
+        
+    }
+    
+    func showControls(){
+        saveButton.hidden = false;
+        useButton.hidden = false;
+        widthControl.hidden = false;
+        colorControl.hidden = false;
+    }
+    
     /*
     // MARK: - Navigation
 

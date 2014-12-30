@@ -128,21 +128,45 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="dZf-EH-VYO" customClass="DrawView" customModule="Graffiti" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ePp-YF-BrQ">
-                                <rect key="frame" x="143" y="54" width="34" height="30"/>
+                                <rect key="frame" x="16" y="74" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveImage" destination="e8Y-g9-gUA" eventType="touchUpInside" id="1vP-g1-Aya"/>
+                                    <action selector="saveImage:" destination="e8Y-g9-gUA" eventType="touchUpInside" id="tc4-e1-yET"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="dZf-EH-VYO" customClass="DrawView" customModule="Graffiti" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="80" width="320" height="476"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nZS-Sd-lMB">
+                                <rect key="frame" x="274" y="74" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Use">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useDrawnImage:" destination="e8Y-g9-gUA" eventType="touchUpInside" id="g4h-JS-OIx"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="g6x-6i-0oy">
+                                <rect key="frame" x="108" y="74" width="104" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="widthSlider:" destination="e8Y-g9-gUA" eventType="valueChanged" id="qOE-AL-qPx"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="yZF-xS-hDB">
+                                <rect key="frame" x="50" y="114" width="219" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="colorSlider:" destination="e8Y-g9-gUA" eventType="valueChanged" id="dCk-7P-ig3"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -159,7 +183,7 @@
                     </navigationItem>
                     <attributedString key="userComments">
                         <fragment>
-                            <string key="content">Canvas, where people will draw stuff. Once they are finished, they can place their graffiti in this same (or probably a different) controller. Will have a button that allows left segue to "saved graffiti," which can be loaded into the canvas and either edited or used straight up. </string>
+                            <string key="content">I want there to be the option to hide the settings so that people can draw things more easily. This will probably require a separate View for the options</string>
                             <attributes>
                                 <font key="NSFont" metaFont="smallSystem"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -167,6 +191,11 @@
                         </fragment>
                     </attributedString>
                     <connections>
+                        <outlet property="colorControl" destination="yZF-xS-hDB" id="ShP-Et-LG5"/>
+                        <outlet property="drawView" destination="dZf-EH-VYO" id="TDa-zI-U5V"/>
+                        <outlet property="saveButton" destination="ePp-YF-BrQ" id="EYP-hK-Xhg"/>
+                        <outlet property="useButton" destination="nZS-Sd-lMB" id="7sY-mq-NlM"/>
+                        <outlet property="widthControl" destination="g6x-6i-0oy" id="tCD-bh-Slx"/>
                         <segue destination="KBx-2p-dzH" kind="push" identifier="canvToSaved" id="2k7-HX-Uu5"/>
                     </connections>
                 </viewController>
