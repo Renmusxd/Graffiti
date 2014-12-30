@@ -14,6 +14,8 @@ class DrawView: UIView {
     
     /*TODO
     
+    DOTS
+    
     UNDO/REDO buttons:  keep an array of paths. push/pop onto when drawing and undoing.
                         when drawing, append the path and merge with cache
                         when undone, redraw the entire cache
@@ -29,6 +31,8 @@ class DrawView: UIView {
     
     var lineColor = UIColor.blackColor()
     var lineWidth : CGFloat = 2.0;
+    
+    
     
     required init(coder aDecoder : NSCoder){
         path = UIBezierPath()
@@ -88,7 +92,8 @@ class DrawView: UIView {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        self.drawBitmap()
+        
+        self.drawBitmap(cPoints.count == 1)
         self.setNeedsDisplay()
         path.removeAllPoints()
         idx = 0
@@ -98,11 +103,19 @@ class DrawView: UIView {
         touchesEnded(touches, withEvent: event)
     }
     
-    func drawBitmap(){
+    func drawBitmap(isPoint:Bool){
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 0)
         lineColor.setStroke()
         cachedImage.drawAtPoint(CGPointZero)
-        path.stroke()
+        if(isPoint){
+            path.moveToPoint(cPoints[0])
+            path.addLineToPoint(cPoints[0])
+            path.stroke()
+        }
+        else{
+            path.stroke()
+        }
+
         cachedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
