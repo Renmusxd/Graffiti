@@ -19,6 +19,8 @@ class DrawView: UIView {
     
     var cachedImage : UIImage
     var path : UIBezierPath
+    var cPoints : [CGPoint] = []
+    var idx = 0
     
     
     required init(coder aDecoder : NSCoder){
@@ -26,6 +28,12 @@ class DrawView: UIView {
         cachedImage = UIImage()
         
         super.init(coder: aDecoder)
+        
+        self.multipleTouchEnabled = false
+        self.backgroundColor = UIColor.whiteColor()
+        
+        path.lineWidth = 2;
+        
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 1.0)
         var rectpath = UIBezierPath(rect: self.bounds)
         UIColor.whiteColor().setFill()
@@ -38,7 +46,8 @@ class DrawView: UIView {
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         lastPoint = touches.anyObject()!.locationInView(self)
-        path.moveToPoint(lastPoint)
+        idx = 0
+        cPoints = [lastPoint]
 //        points = [lastPoint]
         
     }
@@ -46,6 +55,22 @@ class DrawView: UIView {
     
     override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
         var newPoint = touches.anyObject()!.locationInView(self)
+        
+        idx++
+        
+        cPoints += [newPoint]
+        
+        if(idx == 4){
+            
+            var smoothMid = CGPointMake((cPoints[2].x + cPoints[4].x)/2, (cPoints[2].y + cPoints[4].y)/2)
+            var last = cPoints[4]
+            path.moveToPoint(cPoints[0])
+            path.addCurveToPoint(smoothMid, controlPoint1: cPoints[1], controlPoint2: cPoints[2])
+            self.setNeedsDisplay()
+            
+            cPoints = [smoothMid,last]
+            idx = 1
+        }
         
         //lines.append(Line(start:lastPoint,end:newPoint))
         
@@ -68,18 +93,17 @@ class DrawView: UIView {
         
         //points += [lastPoint]
         
-        path.addLineToPoint(newPoint)
+        //path.addLineToPoint(newPoint)
         
-        self.setNeedsDisplay()
+        //self.setNeedsDisplay()
         
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        var p = touches.anyObject()!.locationInView(self)
-        path.addLineToPoint(p)
         self.drawBitmap()
         self.setNeedsDisplay()
         path.removeAllPoints()
+        idx = 0
     }
     
     override func touchesCancelled(touches: NSSet!, withEvent event: UIEvent!) {

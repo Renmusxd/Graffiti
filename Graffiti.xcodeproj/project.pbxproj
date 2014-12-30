@@ -238,11 +238,11 @@
 				TargetAttributes = {
 					44279F0219EF661600A41735 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = X6JQ9K777A;
+						DevelopmentTeam = N674K3JR76;
 					};
 					44279F1719EF661600A41735 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = X6JQ9K777A;
+						DevelopmentTeam = N674K3JR76;
 						TestTargetID = 44279F0219EF661600A41735;
 					};
 				};
