@@ -31,6 +31,7 @@
 		B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC51A4CA3AF001C7298 /* CanvasController.swift */; };
 		B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBC71A4CC948001C7298 /* DrawView.swift */; };
 		B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCA1A4CCB30001C7298 /* Line.swift */; };
+		B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCC1A520630001C7298 /* CatmullRom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B225DBC51A4CA3AF001C7298 /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
 		B225DBC71A4CC948001C7298 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		B225DBCA1A4CCB30001C7298 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B225DBCC1A520630001C7298 /* CatmullRom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				B225DBCA1A4CCB30001C7298 /* Line.swift */,
+				B225DBCC1A520630001C7298 /* CatmullRom.swift */,
 			);
 			name = DrawElements;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */,
 				B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */,
 				44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */,
+				B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */,
 				B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */,
 				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
 				44A02CE519F01B79009D73F3 /* TabView.swift in Sources */,
