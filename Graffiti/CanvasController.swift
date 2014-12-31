@@ -21,6 +21,7 @@ class CanvasController: UIViewController {
     
     @IBOutlet weak var colorControl: UISlider!
     
+    @IBOutlet weak var undoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class CanvasController: UIViewController {
         fucker.addObject(UITouch())
         touchesBegan(fucker, withEvent: UIEvent())
         touchesEnded(fucker, withEvent: UIEvent())
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +74,9 @@ class CanvasController: UIViewController {
     }
     
 
+    @IBAction func undoDraw(sender: AnyObject) {
+        drawView.undoLastDraw()
+    }
     
     
     
@@ -80,6 +85,7 @@ class CanvasController: UIViewController {
         useButton.hidden = true;
         widthControl.hidden = true;
         colorControl.hidden = true;
+        undoButton.hidden = true;
         
     }
     
@@ -88,6 +94,7 @@ class CanvasController: UIViewController {
         useButton.hidden = false;
         widthControl.hidden = false;
         colorControl.hidden = false;
+        undoButton.hidden = false;
     }
     
     /*

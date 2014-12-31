@@ -35,6 +35,7 @@
 		B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCA1A4CCB30001C7298 /* Line.swift */; };
 		B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCC1A520630001C7298 /* CatmullRom.swift */; };
 		B225DBCF1A527A22001C7298 /* PaintOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCE1A527A22001C7298 /* PaintOptionView.swift */; };
+		B225DBD11A537824001C7298 /* PathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBD01A537824001C7298 /* PathWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B225DBCA1A4CCB30001C7298 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B225DBCC1A520630001C7298 /* CatmullRom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
 		B225DBCE1A527A22001C7298 /* PaintOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintOptionView.swift; sourceTree = "<group>"; };
+		B225DBD01A537824001C7298 /* PathWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			children = (
 				B225DBCA1A4CCB30001C7298 /* Line.swift */,
 				B225DBCC1A520630001C7298 /* CatmullRom.swift */,
+				B225DBD01A537824001C7298 /* PathWrapper.swift */,
 			);
 			name = DrawElements;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
 				44A02CE519F01B79009D73F3 /* TabView.swift in Sources */,
 				44A02CD619EF7D77009D73F3 /* UserModel.xcdatamodeld in Sources */,
+				B225DBD11A537824001C7298 /* PathWrapper.swift in Sources */,
 				44A02CDF19EFFCAC009D73F3 /* GraffitiData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

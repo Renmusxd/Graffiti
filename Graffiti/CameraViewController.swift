@@ -30,8 +30,7 @@ class CameraViewController: UIViewController {
     var captureDevice : AVCaptureDevice?
     
     
-    
-   
+
     
     // On view loading, find camera
     override func viewDidLoad() {

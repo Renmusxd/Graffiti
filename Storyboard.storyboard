@@ -133,6 +133,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qiz-LD-ifS">
+                                <rect key="frame" x="266" y="99" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Undo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoDraw:" destination="e8Y-g9-gUA" eventType="touchUpInside" id="dzd-VH-bYe"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ePp-YF-BrQ">
                                 <rect key="frame" x="16" y="74" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -194,6 +204,7 @@
                         <outlet property="colorControl" destination="yZF-xS-hDB" id="ShP-Et-LG5"/>
                         <outlet property="drawView" destination="dZf-EH-VYO" id="TDa-zI-U5V"/>
                         <outlet property="saveButton" destination="ePp-YF-BrQ" id="EYP-hK-Xhg"/>
+                        <outlet property="undoButton" destination="Qiz-LD-ifS" id="aii-we-20Q"/>
                         <outlet property="useButton" destination="nZS-Sd-lMB" id="7sY-mq-NlM"/>
                         <outlet property="widthControl" destination="g6x-6i-0oy" id="tCD-bh-Slx"/>
                         <segue destination="KBx-2p-dzH" kind="push" identifier="canvToSaved" id="2k7-HX-Uu5"/>

@@ -14,7 +14,6 @@ class DrawView: UIView {
     
     /*TODO
     
-    DOTS
     
     UNDO/REDO buttons:  keep an array of paths. push/pop onto when drawing and undoing.
                         when drawing, append the path and merge with cache
@@ -32,7 +31,7 @@ class DrawView: UIView {
     var lineColor = UIColor.blackColor()
     var lineWidth : CGFloat = 2.0;
     
-    
+    var pathStack : [PathWrapper] = []
     
     required init(coder aDecoder : NSCoder){
         path = UIBezierPath()
@@ -51,6 +50,7 @@ class DrawView: UIView {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 1.0)
         var rectpath = UIBezierPath(rect: self.bounds)
         UIColor.whiteColor().setFill()
+        //UIColor.clearColor()
         cachedImage.drawAtPoint(CGPointZero)
         rectpath.fill()
         
@@ -65,6 +65,9 @@ class DrawView: UIView {
         idx = 0
         cPoints = [lastPoint]
         
+        pathStack += [PathWrapper()]
+        pathStack.last?.lineWidth = lineWidth
+        pathStack.last?.lineColor = lineColor
     }
 
     
@@ -81,6 +84,10 @@ class DrawView: UIView {
             var last = cPoints[4]
             path.moveToPoint(cPoints[0])
             path.addCurveToPoint(smoothMid, controlPoint1: cPoints[1], controlPoint2: cPoints[2])
+            
+            pathStack.last?.addSpline([cPoints[0],smoothMid,cPoints[1],cPoints[2]])
+            
+            
             self.setNeedsDisplay()
             
             cPoints = [smoothMid,last]
@@ -95,6 +102,7 @@ class DrawView: UIView {
         
         self.drawBitmap(cPoints.count == 1)
         self.setNeedsDisplay()
+        
         path.removeAllPoints()
         idx = 0
     }
@@ -110,6 +118,9 @@ class DrawView: UIView {
         if(isPoint){
             path.moveToPoint(cPoints[0])
             path.addLineToPoint(cPoints[0])
+            
+            pathStack.last?.addSpline([cPoints[0],cPoints[0]])
+            
             path.stroke()
         }
         else{
@@ -134,6 +145,59 @@ class DrawView: UIView {
     func changeWidth(newWidth:CGFloat){
         lineWidth = newWidth;
         path.lineWidth = lineWidth;
+    }
+    
+    
+    func undoLastDraw(){
+        if(pathStack.count > 0){
+            pathStack.removeLast()
+            reDrawCache()
+            
+            
+            self.setNeedsDisplay()
+            
+        }
+    }
+    
+    
+    
+    
+    func reDrawCache(){
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 0)
+        //reset to white
+        var rectpath = UIBezierPath(rect: self.bounds)
+        UIColor.whiteColor().setFill()
+        //UIColor.clearColor()
+        cachedImage.drawAtPoint(CGPointZero)
+        rectpath.fill()
+        
+        //draw all lines
+        
+        
+        for pathWrap in pathStack{
+            pathWrap.lineColor.setStroke()
+            println(pathWrap.lineColor)
+            path.lineWidth = pathWrap.lineWidth
+            for curve in pathWrap.cPointArray {
+                path.moveToPoint(curve[0])
+                if(curve.count == 2){
+                    path.addLineToPoint(curve[1])
+                }
+                if(curve.count == 4){
+                    path.addCurveToPoint(curve[1], controlPoint1: curve[2], controlPoint2: curve[3])
+                }
+            }
+            path.stroke()
+            path.removeAllPoints()
+            
+        }
+        
+        path.lineWidth = lineWidth
+        cachedImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        
     }
     
 
