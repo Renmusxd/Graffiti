@@ -10,6 +10,13 @@ import UIKit
 
 class CanvasController: UIViewController {
 
+    
+    /* TODO
+    
+    Maybe have shake to make the controls disappear to allow more coherent drawing.
+    
+    */
+    
     @IBOutlet weak var drawView: DrawView!
     
     
@@ -33,7 +40,8 @@ class CanvasController: UIViewController {
         fucker.addObject(UITouch())
         touchesBegan(fucker, withEvent: UIEvent())
         touchesEnded(fucker, withEvent: UIEvent())
-        
+        undoDraw(undoButton)
+        undoDraw(undoButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +66,8 @@ class CanvasController: UIViewController {
     }
     
     @IBAction func saveImage(sender: AnyObject) {
+        //var imageData = UIImagePNGRepresentation(drawView.cachedImage)
+        UIImageWriteToSavedPhotosAlbum(drawView.cachedImage, nil, nil, nil)
     }
     
     @IBAction func useDrawnImage(sender: AnyObject) {

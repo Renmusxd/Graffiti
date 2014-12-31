@@ -13,13 +13,9 @@ class DrawView: UIView {
     
     
     /*TODO
-    
-    
-    UNDO/REDO buttons:  keep an array of paths. push/pop onto when drawing and undoing.
-                        when drawing, append the path and merge with cache
-                        when undone, redraw the entire cache
     OPTIMIZATION: allocate background threads to update cache
-    
+    draw text?
+    paint bucket?
     */
     
     
