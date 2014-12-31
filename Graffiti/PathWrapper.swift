@@ -11,20 +11,30 @@ import UIKit
 
 class PathWrapper{
     
-    var cPointArray : [[CGPoint]] = []
+    var path : UIBezierPath = UIBezierPath()
     var lineWidth : CGFloat = 0
     var lineColor :UIColor = UIColor.clearColor()
+    var lineCapStyle : CGLineCap = kCGLineCapRound
     init(){
         
     }
     
-    init(spline:[CGPoint]){
-        cPointArray += [spline]
+    init(spline:UIBezierPath){
+        path = spline
     }
     
-    func addSpline(spline:[CGPoint]){
-        cPointArray += [spline]
+    
+    func addSpline(spline:UIBezierPath){
+        path = spline
     }
     
+    func draw(){
+        lineColor.setStroke()
+        path.lineWidth = lineWidth
+        path.lineCapStyle = lineCapStyle
+        path.stroke()
+    }
+    
+
     
 }

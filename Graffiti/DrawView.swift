@@ -65,9 +65,8 @@ class DrawView: UIView {
         idx = 0
         cPoints = [lastPoint]
         
-        pathStack += [PathWrapper()]
-        pathStack.last?.lineWidth = lineWidth
-        pathStack.last?.lineColor = lineColor
+        
+        
     }
 
     
@@ -85,8 +84,6 @@ class DrawView: UIView {
             path.moveToPoint(cPoints[0])
             path.addCurveToPoint(smoothMid, controlPoint1: cPoints[1], controlPoint2: cPoints[2])
             
-            pathStack.last?.addSpline([cPoints[0],smoothMid,cPoints[1],cPoints[2]])
-            
             
             self.setNeedsDisplay()
             
@@ -103,6 +100,8 @@ class DrawView: UIView {
         self.drawBitmap(cPoints.count == 1)
         self.setNeedsDisplay()
         
+        self.addPathToStack(path)
+        
         path.removeAllPoints()
         idx = 0
     }
@@ -118,9 +117,7 @@ class DrawView: UIView {
         if(isPoint){
             path.moveToPoint(cPoints[0])
             path.addLineToPoint(cPoints[0])
-            
-            pathStack.last?.addSpline([cPoints[0],cPoints[0]])
-            
+            self.addPathToStack(path)
             path.stroke()
         }
         else{
@@ -175,29 +172,23 @@ class DrawView: UIView {
         
         
         for pathWrap in pathStack{
-            pathWrap.lineColor.setStroke()
-            println(pathWrap.lineColor)
-            path.lineWidth = pathWrap.lineWidth
-            for curve in pathWrap.cPointArray {
-                path.moveToPoint(curve[0])
-                if(curve.count == 2){
-                    path.addLineToPoint(curve[1])
-                }
-                if(curve.count == 4){
-                    path.addCurveToPoint(curve[1], controlPoint1: curve[2], controlPoint2: curve[3])
-                }
-            }
-            path.stroke()
-            path.removeAllPoints()
-            
+            pathWrap.draw()
         }
         
         path.lineWidth = lineWidth
         cachedImage = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()
+    }
+    
+    func addPathToStack(bpath:UIBezierPath){
+        var pathWrapper = PathWrapper()
         
-        
+        pathWrapper.addSpline(UIBezierPath(CGPath: bpath.CGPath))
+        pathWrapper.lineWidth = lineWidth
+        pathWrapper.lineColor = lineColor
+        pathWrapper.lineCapStyle = path.lineCapStyle
+        pathStack += [pathWrapper]
     }
     
 
