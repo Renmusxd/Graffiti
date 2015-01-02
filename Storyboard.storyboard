@@ -7,7 +7,7 @@
         <!--Login Controller-->
         <scene sceneID="ocE-Eq-vm3">
             <objects>
-                <viewController id="bvY-37-aNz" customClass="LoginController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bvY-37-aNz" customClass="LoginController" customModule="Graffitus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s75-vL-NDp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,12 +87,12 @@
         <!--Canvas Controller-->
         <scene sceneID="6Id-xF-nad">
             <objects>
-                <viewController id="e8Y-g9-gUA" customClass="CanvasController" customModule="Graffiti" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e8Y-g9-gUA" customClass="CanvasController" customModule="Graffitus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4uK-IT-qwL">
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="dZf-EH-VYO" customClass="DrawView" customModule="Graffiti" customModuleProvider="target">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="dZf-EH-VYO" customClass="DrawView" customModule="Graffitus" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,7 +180,7 @@
         <!--Camera View Controller-->
         <scene sceneID="8jk-Yc-WCH">
             <objects>
-                <viewController id="g1Z-V6-ezx" customClass="CameraViewController" customModule="Graffiti" sceneMemberID="viewController">
+                <viewController id="g1Z-V6-ezx" customClass="CameraViewController" customModule="Graffitus" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="by4-2K-meb">
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

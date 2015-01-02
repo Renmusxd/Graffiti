@@ -1,15 +1,15 @@
 //
-//  GraffitiTests.swift
-//  GraffitiTests
+//  GraffitusTests.swift
+//  GraffitusTests
 //
-//  Created by Sumner Hearth on 10/15/14.
-//  Copyright (c) 2014 RenmusLabs. All rights reserved.
+//  Created by G Mulitz on 1/1/15.
+//  Copyright (c) 2015 Blimp Development. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class GraffitiTests: XCTestCase {
+class GraffitusTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

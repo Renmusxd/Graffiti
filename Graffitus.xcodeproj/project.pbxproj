@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B201F15B1A5611A200186021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F15A1A5611A200186021 /* AppDelegate.swift */; };
+		B201F1741A5611A200186021 /* GraffitusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1731A5611A200186021 /* GraffitusTests.swift */; };
+		B201F1961A56144000186021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B201F1801A56144000186021 /* LaunchScreen.xib */; };
+		B201F1971A56144000186021 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1821A56144000186021 /* CameraViewController.swift */; };
+		B201F1981A56144000186021 /* CanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1831A56144000186021 /* CanvasController.swift */; };
+		B201F1991A56144000186021 /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1841A56144000186021 /* CatmullRom.swift */; };
+		B201F19A1A56144000186021 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1851A56144000186021 /* DrawView.swift */; };
+		B201F19B1A56144000186021 /* GraffitiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1861A56144000186021 /* GraffitiData.swift */; };
+		B201F19C1A56144000186021 /* GraffitiObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1871A56144000186021 /* GraffitiObject.swift */; };
+		B201F19D1A56144000186021 /* Graffitus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B201F1881A56144000186021 /* Graffitus.xcdatamodeld */; };
+		B201F19E1A56144000186021 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18A1A56144000186021 /* Image.swift */; };
+		B201F19F1A56144000186021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B201F18B1A56144000186021 /* Images.xcassets */; };
+		B201F1A01A56144000186021 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B201F18C1A56144000186021 /* Info.plist */; };
+		B201F1A11A56144000186021 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18D1A56144000186021 /* Line.swift */; };
+		B201F1A21A56144000186021 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18E1A56144000186021 /* LoginController.swift */; };
+		B201F1A31A56144000186021 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18F1A56144000186021 /* MyGraffitiController.swift */; };
+		B201F1A41A56144000186021 /* MyTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1901A56144000186021 /* MyTagController.swift */; };
+		B201F1A51A56144000186021 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1911A56144000186021 /* NavController.swift */; };
+		B201F1A61A56144000186021 /* PaintOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1921A56144000186021 /* PaintOptionView.swift */; };
+		B201F1A71A56144000186021 /* PathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1931A56144000186021 /* PathWrapper.swift */; };
+		B201F1A81A56144000186021 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1941A56144000186021 /* TabView.swift */; };
+		B201F1A91A56144000186021 /* TagDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1951A56144000186021 /* TagDB.swift */; };
+		B201F1AB1A561D2F00186021 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B201F1AA1A561D2F00186021 /* Storyboard.storyboard */; };
+		B201F1AD1A561F2600186021 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1AC1A561F2600186021 /* CoreData.framework */; };
+		B201F1AF1A561F2C00186021 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1AE1A561F2C00186021 /* UIKit.framework */; };
+		B201F1B11A561F3300186021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B01A561F3300186021 /* Foundation.framework */; };
+		B201F1B31A561F3A00186021 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B21A561F3A00186021 /* CoreGraphics.framework */; };
+		B201F1B51A561F4100186021 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B41A561F4100186021 /* Twitter.framework */; };
+		B201F1B71A561F4800186021 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B61A561F4800186021 /* GLKit.framework */; };
+		B201F1B91A561F5100186021 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B81A561F5100186021 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B201F16E1A5611A200186021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B201F14D1A5611A200186021 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B201F1541A5611A200186021;
+			remoteInfo = Graffitus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B201F1551A5611A200186021 /* Graffitus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffitus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B201F15A1A5611A200186021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B201F16D1A5611A200186021 /* GraffitusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B201F1721A5611A200186021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B201F1731A5611A200186021 /* GraffitusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitusTests.swift; sourceTree = "<group>"; };
+		B201F1811A56144000186021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		B201F1821A56144000186021 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B201F1831A56144000186021 /* CanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasController.swift; sourceTree = "<group>"; };
+		B201F1841A56144000186021 /* CatmullRom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
+		B201F1851A56144000186021 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		B201F1861A56144000186021 /* GraffitiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiData.swift; sourceTree = "<group>"; };
+		B201F1871A56144000186021 /* GraffitiObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiObject.swift; sourceTree = "<group>"; };
+		B201F1891A56144000186021 /* Graffitus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graffitus.xcdatamodel; sourceTree = "<group>"; };
+		B201F18A1A56144000186021 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B201F18B1A56144000186021 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B201F18C1A56144000186021 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B201F18D1A56144000186021 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B201F18E1A56144000186021 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B201F18F1A56144000186021 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
+		B201F1901A56144000186021 /* MyTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTagController.swift; sourceTree = "<group>"; };
+		B201F1911A56144000186021 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		B201F1921A56144000186021 /* PaintOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintOptionView.swift; sourceTree = "<group>"; };
+		B201F1931A56144000186021 /* PathWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathWrapper.swift; sourceTree = "<group>"; };
+		B201F1941A56144000186021 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		B201F1951A56144000186021 /* TagDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDB.swift; sourceTree = "<group>"; };
+		B201F1AA1A561D2F00186021 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
+		B201F1AC1A561F2600186021 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B201F1AE1A561F2C00186021 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B201F1B01A561F3300186021 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B201F1B21A561F3A00186021 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B201F1B41A561F4100186021 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		B201F1B61A561F4800186021 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B201F1B81A561F5100186021 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B201F1521A5611A200186021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201F1B91A561F5100186021 /* OpenGLES.framework in Frameworks */,
+				B201F1B71A561F4800186021 /* GLKit.framework in Frameworks */,
+				B201F1B51A561F4100186021 /* Twitter.framework in Frameworks */,
+				B201F1B31A561F3A00186021 /* CoreGraphics.framework in Frameworks */,
+				B201F1B11A561F3300186021 /* Foundation.framework in Frameworks */,
+				B201F1AF1A561F2C00186021 /* UIKit.framework in Frameworks */,
+				B201F1AD1A561F2600186021 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B201F16A1A5611A200186021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B201F14C1A5611A200186021 = {
+			isa = PBXGroup;
+			children = (
+				B201F1B81A561F5100186021 /* OpenGLES.framework */,
+				B201F1B61A561F4800186021 /* GLKit.framework */,
+				B201F1B41A561F4100186021 /* Twitter.framework */,
+				B201F1B21A561F3A00186021 /* CoreGraphics.framework */,
+				B201F1B01A561F3300186021 /* Foundation.framework */,
+				B201F1AE1A561F2C00186021 /* UIKit.framework */,
+				B201F1AC1A561F2600186021 /* CoreData.framework */,
+				B201F1571A5611A200186021 /* Graffitus */,
+				B201F1701A5611A200186021 /* GraffitusTests */,
+				B201F1561A5611A200186021 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B201F1561A5611A200186021 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1551A5611A200186021 /* Graffitus.app */,
+				B201F16D1A5611A200186021 /* GraffitusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B201F1571A5611A200186021 /* Graffitus */ = {
+			isa = PBXGroup;
+			children = (
+				B201F17F1A56144000186021 /* Base.lproj */,
+				B201F1821A56144000186021 /* CameraViewController.swift */,
+				B201F1831A56144000186021 /* CanvasController.swift */,
+				B201F1841A56144000186021 /* CatmullRom.swift */,
+				B201F1851A56144000186021 /* DrawView.swift */,
+				B201F1861A56144000186021 /* GraffitiData.swift */,
+				B201F1871A56144000186021 /* GraffitiObject.swift */,
+				B201F1881A56144000186021 /* Graffitus.xcdatamodeld */,
+				B201F18A1A56144000186021 /* Image.swift */,
+				B201F18B1A56144000186021 /* Images.xcassets */,
+				B201F1AA1A561D2F00186021 /* Storyboard.storyboard */,
+				B201F18D1A56144000186021 /* Line.swift */,
+				B201F18E1A56144000186021 /* LoginController.swift */,
+				B201F18F1A56144000186021 /* MyGraffitiController.swift */,
+				B201F1901A56144000186021 /* MyTagController.swift */,
+				B201F1911A56144000186021 /* NavController.swift */,
+				B201F1921A56144000186021 /* PaintOptionView.swift */,
+				B201F1931A56144000186021 /* PathWrapper.swift */,
+				B201F1941A56144000186021 /* TabView.swift */,
+				B201F1951A56144000186021 /* TagDB.swift */,
+				B201F15A1A5611A200186021 /* AppDelegate.swift */,
+				B201F1581A5611A200186021 /* Supporting Files */,
+			);
+			path = Graffitus;
+			sourceTree = "<group>";
+		};
+		B201F1581A5611A200186021 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B201F18C1A56144000186021 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B201F1701A5611A200186021 /* GraffitusTests */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1731A5611A200186021 /* GraffitusTests.swift */,
+				B201F1711A5611A200186021 /* Supporting Files */,
+			);
+			path = GraffitusTests;
+			sourceTree = "<group>";
+		};
+		B201F1711A5611A200186021 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1721A5611A200186021 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B201F17F1A56144000186021 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1801A56144000186021 /* LaunchScreen.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B201F1541A5611A200186021 /* Graffitus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B201F1771A5611A200186021 /* Build configuration list for PBXNativeTarget "Graffitus" */;
+			buildPhases = (
+				B201F1511A5611A200186021 /* Sources */,
+				B201F1521A5611A200186021 /* Frameworks */,
+				B201F1531A5611A200186021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Graffitus;
+			productName = Graffitus;
+			productReference = B201F1551A5611A200186021 /* Graffitus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B201F16C1A5611A200186021 /* GraffitusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B201F17A1A5611A200186021 /* Build configuration list for PBXNativeTarget "GraffitusTests" */;
+			buildPhases = (
+				B201F1691A5611A200186021 /* Sources */,
+				B201F16A1A5611A200186021 /* Frameworks */,
+				B201F16B1A5611A200186021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B201F16F1A5611A200186021 /* PBXTargetDependency */,
+			);
+			name = GraffitusTests;
+			productName = GraffitusTests;
+			productReference = B201F16D1A5611A200186021 /* GraffitusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B201F14D1A5611A200186021 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Blimp Development";
+				TargetAttributes = {
+					B201F1541A5611A200186021 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B201F16C1A5611A200186021 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B201F1541A5611A200186021;
+					};
+				};
+			};
+			buildConfigurationList = B201F1501A5611A200186021 /* Build configuration list for PBXProject "Graffitus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B201F14C1A5611A200186021;
+			productRefGroup = B201F1561A5611A200186021 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B201F1541A5611A200186021 /* Graffitus */,
+				B201F16C1A5611A200186021 /* GraffitusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B201F1531A5611A200186021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201F1961A56144000186021 /* LaunchScreen.xib in Resources */,
+				B201F1AB1A561D2F00186021 /* Storyboard.storyboard in Resources */,
+				B201F19F1A56144000186021 /* Images.xcassets in Resources */,
+				B201F1A01A56144000186021 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B201F16B1A5611A200186021 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B201F1511A5611A200186021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201F1A61A56144000186021 /* PaintOptionView.swift in Sources */,
+				B201F15B1A5611A200186021 /* AppDelegate.swift in Sources */,
+				B201F1A31A56144000186021 /* MyGraffitiController.swift in Sources */,
+				B201F1A21A56144000186021 /* LoginController.swift in Sources */,
+				B201F1981A56144000186021 /* CanvasController.swift in Sources */,
+				B201F19C1A56144000186021 /* GraffitiObject.swift in Sources */,
+				B201F1A51A56144000186021 /* NavController.swift in Sources */,
+				B201F19D1A56144000186021 /* Graffitus.xcdatamodeld in Sources */,
+				B201F1A41A56144000186021 /* MyTagController.swift in Sources */,
+				B201F1A91A56144000186021 /* TagDB.swift in Sources */,
+				B201F19A1A56144000186021 /* DrawView.swift in Sources */,
+				B201F19B1A56144000186021 /* GraffitiData.swift in Sources */,
+				B201F1971A56144000186021 /* CameraViewController.swift in Sources */,
+				B201F1991A56144000186021 /* CatmullRom.swift in Sources */,
+				B201F1A11A56144000186021 /* Line.swift in Sources */,
+				B201F1A71A56144000186021 /* PathWrapper.swift in Sources */,
+				B201F1A81A56144000186021 /* TabView.swift in Sources */,
+				B201F19E1A56144000186021 /* Image.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B201F1691A5611A200186021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201F1741A5611A200186021 /* GraffitusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B201F16F1A5611A200186021 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B201F1541A5611A200186021 /* Graffitus */;
+			targetProxy = B201F16E1A5611A200186021 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B201F1801A56144000186021 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B201F1811A56144000186021 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B201F1751A5611A200186021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B201F1761A5611A200186021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B201F1781A5611A200186021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffitus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B201F1791A5611A200186021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Graffitus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B201F17B1A5611A200186021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraffitusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffitus.app/Graffitus";
+			};
+			name = Debug;
+		};
+		B201F17C1A5611A200186021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GraffitusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffitus.app/Graffitus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B201F1501A5611A200186021 /* Build configuration list for PBXProject "Graffitus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B201F1751A5611A200186021 /* Debug */,
+				B201F1761A5611A200186021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B201F1771A5611A200186021 /* Build configuration list for PBXNativeTarget "Graffitus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B201F1781A5611A200186021 /* Debug */,
+				B201F1791A5611A200186021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B201F17A1A5611A200186021 /* Build configuration list for PBXNativeTarget "GraffitusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B201F17B1A5611A200186021 /* Debug */,
+				B201F17C1A5611A200186021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B201F1881A56144000186021 /* Graffitus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B201F1891A56144000186021 /* Graffitus.xcdatamodel */,
+			);
+			currentVersion = B201F1891A56144000186021 /* Graffitus.xcdatamodel */;
+			path = Graffitus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B201F14D1A5611A200186021 /* Project object */;
+}
