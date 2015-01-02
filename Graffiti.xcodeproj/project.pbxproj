@@ -22,6 +22,8 @@
 		44A02CE919F01DD6009D73F3 /* TagDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CE819F01DD6009D73F3 /* TagDB.swift */; };
 		44A02CED19F01E43009D73F3 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */; };
 		44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A02CEE19F01E80009D73F3 /* MyTagController.swift */; };
+		B20C8EA81A552CA4003DEA4F /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B20C8EA61A552CA4003DEA4F /* ImageModel.xcdatamodeld */; };
+		B20C8EAA1A560B6C003DEA4F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C8EA91A560B6B003DEA4F /* Image.swift */; };
 		B2167DD21A4A9B5D00A67FD9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DD11A4A9B5D00A67FD9 /* OpenGLES.framework */; };
 		B2167DD41A4A9B6600A67FD9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DD31A4A9B6600A67FD9 /* GLKit.framework */; };
 		B2167DD81A4B92A800A67FD9 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2167DD71A4B92A800A67FD9 /* Twitter.framework */; };
@@ -36,6 +38,7 @@
 		B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCC1A520630001C7298 /* CatmullRom.swift */; };
 		B225DBCF1A527A22001C7298 /* PaintOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBCE1A527A22001C7298 /* PaintOptionView.swift */; };
 		B225DBD11A537824001C7298 /* PathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225DBD01A537824001C7298 /* PathWrapper.swift */; };
+		B2F86F151A54866700B99D93 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F86F141A54866700B99D93 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,8 @@
 		44A02CE819F01DD6009D73F3 /* TagDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDB.swift; sourceTree = "<group>"; };
 		44A02CEC19F01E43009D73F3 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
 		44A02CEE19F01E80009D73F3 /* MyTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTagController.swift; sourceTree = "<group>"; };
+		B20C8EA71A552CA4003DEA4F /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
+		B20C8EA91A560B6B003DEA4F /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		B2167DD11A4A9B5D00A67FD9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B2167DD31A4A9B6600A67FD9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B2167DD71A4B92A800A67FD9 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -81,6 +86,7 @@
 		B225DBCC1A520630001C7298 /* CatmullRom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
 		B225DBCE1A527A22001C7298 /* PaintOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintOptionView.swift; sourceTree = "<group>"; };
 		B225DBD01A537824001C7298 /* PathWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathWrapper.swift; sourceTree = "<group>"; };
+		B2F86F141A54866700B99D93 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F86F151A54866700B99D93 /* CoreData.framework in Frameworks */,
 				B2167DDE1A4B92E900A67FD9 /* UIKit.framework in Frameworks */,
 				44012C681A520EFC00D5E0C6 /* opencv2.framework in Frameworks */,
 				B2167DDC1A4B92DC00A67FD9 /* Foundation.framework in Frameworks */,
@@ -112,6 +119,7 @@
 		44279EFA19EF661600A41735 = {
 			isa = PBXGroup;
 			children = (
+				B2F86F141A54866700B99D93 /* CoreData.framework */,
 				44012C671A520EFC00D5E0C6 /* opencv2.framework */,
 				B2167DDD1A4B92E900A67FD9 /* UIKit.framework */,
 				B2167DDB1A4B92DC00A67FD9 /* Foundation.framework */,
@@ -137,6 +145,7 @@
 		44279F0519EF661600A41735 /* Graffiti */ = {
 			isa = PBXGroup;
 			children = (
+				B20C8EA51A552C72003DEA4F /* DataObjects */,
 				B225DBC91A4CCB16001C7298 /* DrawElements */,
 				B2167E441A4C07A400A67FD9 /* CameraViewController.swift */,
 				44279F0819EF661600A41735 /* AppDelegate.swift */,
@@ -151,7 +160,6 @@
 				44A02CDB19EF8192009D73F3 /* Storyboard.storyboard */,
 				44279F0F19EF661600A41735 /* Images.xcassets */,
 				44279F1119EF661600A41735 /* LaunchScreen.xib */,
-				44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */,
 				44279F0619EF661600A41735 /* Supporting Files */,
 				B225DBC31A4C0EC1001C7298 /* NavController.swift */,
 				B225DBC71A4CC948001C7298 /* DrawView.swift */,
@@ -183,6 +191,16 @@
 				44279F1D19EF661600A41735 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20C8EA51A552C72003DEA4F /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				44A02CD419EF7D77009D73F3 /* UserModel.xcdatamodeld */,
+				B20C8EA61A552CA4003DEA4F /* ImageModel.xcdatamodeld */,
+				B20C8EA91A560B6B003DEA4F /* Image.swift */,
+			);
+			name = DataObjects;
 			sourceTree = "<group>";
 		};
 		B225DBC91A4CCB16001C7298 /* DrawElements */ = {
@@ -304,11 +322,13 @@
 				44A02CD819EF7EF9009D73F3 /* LoginController.swift in Sources */,
 				44A02CEF19F01E80009D73F3 /* MyTagController.swift in Sources */,
 				B225DBCB1A4CCB30001C7298 /* Line.swift in Sources */,
+				B20C8EA81A552CA4003DEA4F /* ImageModel.xcdatamodeld in Sources */,
 				B225DBC61A4CA3AF001C7298 /* CanvasController.swift in Sources */,
 				B225DBC41A4C0EC1001C7298 /* NavController.swift in Sources */,
 				44A02CE319EFFDB1009D73F3 /* GraffitiObject.swift in Sources */,
 				B225DBCD1A520630001C7298 /* CatmullRom.swift in Sources */,
 				B225DBC81A4CC948001C7298 /* DrawView.swift in Sources */,
+				B20C8EAA1A560B6C003DEA4F /* Image.swift in Sources */,
 				44279F0919EF661600A41735 /* AppDelegate.swift in Sources */,
 				44A02CE519F01B79009D73F3 /* TabView.swift in Sources */,
 				44A02CD619EF7D77009D73F3 /* UserModel.xcdatamodeld in Sources */,
@@ -530,6 +550,16 @@
 			);
 			currentVersion = 44A02CD519EF7D77009D73F3 /* UserModel.xcdatamodel */;
 			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		B20C8EA61A552CA4003DEA4F /* ImageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B20C8EA71A552CA4003DEA4F /* ImageModel.xcdatamodel */,
+			);
+			currentVersion = B20C8EA71A552CA4003DEA4F /* ImageModel.xcdatamodel */;
+			path = ImageModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

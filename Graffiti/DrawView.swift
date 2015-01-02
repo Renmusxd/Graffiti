@@ -113,7 +113,7 @@ class DrawView: UIView {
         if(isPoint){
             path.moveToPoint(cPoints[0])
             path.addLineToPoint(cPoints[0])
-            self.addPathToStack(path)
+            
             path.stroke()
         }
         else{

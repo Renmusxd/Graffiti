@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CanvasController: UIViewController {
 
@@ -41,7 +42,7 @@ class CanvasController: UIViewController {
         touchesBegan(fucker, withEvent: UIEvent())
         touchesEnded(fucker, withEvent: UIEvent())
         undoDraw(undoButton)
-        undoDraw(undoButton)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,8 +67,10 @@ class CanvasController: UIViewController {
     }
     
     @IBAction func saveImage(sender: AnyObject) {
-        //var imageData = UIImagePNGRepresentation(drawView.cachedImage)
-        UIImageWriteToSavedPhotosAlbum(drawView.cachedImage, nil, nil, nil)
+        var imageData = UIImagePNGRepresentation(drawView.cachedImage)
+        //UIImageWriteToSavedPhotosAlbum(drawView.cachedImage, nil, nil, nil)
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let context : NSManagedObjectContext = appDel.managedObjectContext!
     }
     
     @IBAction func useDrawnImage(sender: AnyObject) {
@@ -86,6 +89,7 @@ class CanvasController: UIViewController {
 
     @IBAction func undoDraw(sender: AnyObject) {
         drawView.undoLastDraw()
+        
     }
     
     
