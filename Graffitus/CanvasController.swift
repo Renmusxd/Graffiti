@@ -31,6 +31,9 @@ class CanvasController: UIViewController {
     
     @IBOutlet weak var undoButton: UIButton!
     
+    @IBOutlet weak var myGrafButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -71,6 +74,12 @@ class CanvasController: UIViewController {
         //UIImageWriteToSavedPhotosAlbum(drawView.cachedImage, nil, nil, nil)
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let context : NSManagedObjectContext = appDel.managedObjectContext!
+        let ent = NSEntityDescription.entityForName("ImageData", inManagedObjectContext: context)!
+        var dataObj = ImageData(entity: ent, insertIntoManagedObjectContext: context)
+        dataObj.imageData = imageData
+        
+        context.save(nil)
+        
     }
     
     @IBAction func useDrawnImage(sender: AnyObject) {
@@ -93,6 +102,10 @@ class CanvasController: UIViewController {
     }
     
     
+    @IBAction func toGraffitiViewer(sender: AnyObject) {
+        performSegueWithIdentifier("canvasToGraffitiPicker", sender: nil)
+        
+    }
     
     func hideControls(){
         saveButton.hidden = true;
@@ -100,7 +113,7 @@ class CanvasController: UIViewController {
         widthControl.hidden = true;
         colorControl.hidden = true;
         undoButton.hidden = true;
-        
+        myGrafButton.hidden = true;
     }
     
     func showControls(){
@@ -109,6 +122,7 @@ class CanvasController: UIViewController {
         widthControl.hidden = false;
         colorControl.hidden = false;
         undoButton.hidden = false;
+        myGrafButton.hidden = false;
     }
     
     /*

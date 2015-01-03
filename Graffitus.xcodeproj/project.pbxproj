@@ -17,15 +17,13 @@
 		B201F19B1A56144000186021 /* GraffitiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1861A56144000186021 /* GraffitiData.swift */; };
 		B201F19C1A56144000186021 /* GraffitiObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1871A56144000186021 /* GraffitiObject.swift */; };
 		B201F19D1A56144000186021 /* Graffitus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B201F1881A56144000186021 /* Graffitus.xcdatamodeld */; };
-		B201F19E1A56144000186021 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18A1A56144000186021 /* Image.swift */; };
+		B201F19E1A56144000186021 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18A1A56144000186021 /* ImageData.swift */; };
 		B201F19F1A56144000186021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B201F18B1A56144000186021 /* Images.xcassets */; };
 		B201F1A01A56144000186021 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B201F18C1A56144000186021 /* Info.plist */; };
 		B201F1A11A56144000186021 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18D1A56144000186021 /* Line.swift */; };
 		B201F1A21A56144000186021 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18E1A56144000186021 /* LoginController.swift */; };
-		B201F1A31A56144000186021 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F18F1A56144000186021 /* MyGraffitiController.swift */; };
 		B201F1A41A56144000186021 /* MyTagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1901A56144000186021 /* MyTagController.swift */; };
 		B201F1A51A56144000186021 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1911A56144000186021 /* NavController.swift */; };
-		B201F1A61A56144000186021 /* PaintOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1921A56144000186021 /* PaintOptionView.swift */; };
 		B201F1A71A56144000186021 /* PathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1931A56144000186021 /* PathWrapper.swift */; };
 		B201F1A81A56144000186021 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1941A56144000186021 /* TabView.swift */; };
 		B201F1A91A56144000186021 /* TagDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1951A56144000186021 /* TagDB.swift */; };
@@ -37,6 +35,9 @@
 		B201F1B51A561F4100186021 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B41A561F4100186021 /* Twitter.framework */; };
 		B201F1B71A561F4800186021 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B61A561F4800186021 /* GLKit.framework */; };
 		B201F1B91A561F5100186021 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B201F1B81A561F5100186021 /* OpenGLES.framework */; };
+		B2AEABA91A565BB500060CA1 /* MyGraffitiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEABA81A565BB500060CA1 /* MyGraffitiController.swift */; };
+		B2AEABAB1A56725700060CA1 /* SingleGraffitiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEABAA1A56725700060CA1 /* SingleGraffitiCell.swift */; };
+		B2AEABAD1A5691D900060CA1 /* GraffitiCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEABAC1A5691D900060CA1 /* GraffitiCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,15 +64,13 @@
 		B201F1861A56144000186021 /* GraffitiData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiData.swift; sourceTree = "<group>"; };
 		B201F1871A56144000186021 /* GraffitiObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiObject.swift; sourceTree = "<group>"; };
 		B201F1891A56144000186021 /* Graffitus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Graffitus.xcdatamodel; sourceTree = "<group>"; };
-		B201F18A1A56144000186021 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B201F18A1A56144000186021 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		B201F18B1A56144000186021 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B201F18C1A56144000186021 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B201F18D1A56144000186021 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		B201F18E1A56144000186021 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		B201F18F1A56144000186021 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
 		B201F1901A56144000186021 /* MyTagController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTagController.swift; sourceTree = "<group>"; };
 		B201F1911A56144000186021 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
-		B201F1921A56144000186021 /* PaintOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintOptionView.swift; sourceTree = "<group>"; };
 		B201F1931A56144000186021 /* PathWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathWrapper.swift; sourceTree = "<group>"; };
 		B201F1941A56144000186021 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		B201F1951A56144000186021 /* TagDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagDB.swift; sourceTree = "<group>"; };
@@ -83,6 +82,9 @@
 		B201F1B41A561F4100186021 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		B201F1B61A561F4800186021 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B201F1B81A561F5100186021 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B2AEABA81A565BB500060CA1 /* MyGraffitiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGraffitiController.swift; sourceTree = "<group>"; };
+		B2AEABAA1A56725700060CA1 /* SingleGraffitiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGraffitiCell.swift; sourceTree = "<group>"; };
+		B2AEABAC1A5691D900060CA1 /* GraffitiCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,24 +140,16 @@
 		B201F1571A5611A200186021 /* Graffitus */ = {
 			isa = PBXGroup;
 			children = (
+				B201F1BD1A56342C00186021 /* Views */,
+				B201F1BC1A56341500186021 /* ViewControllers */,
+				B201F1BB1A56340700186021 /* DataObjects */,
+				B201F1BA1A56332100186021 /* DrawElements */,
 				B201F17F1A56144000186021 /* Base.lproj */,
-				B201F1821A56144000186021 /* CameraViewController.swift */,
-				B201F1831A56144000186021 /* CanvasController.swift */,
-				B201F1841A56144000186021 /* CatmullRom.swift */,
-				B201F1851A56144000186021 /* DrawView.swift */,
 				B201F1861A56144000186021 /* GraffitiData.swift */,
 				B201F1871A56144000186021 /* GraffitiObject.swift */,
 				B201F1881A56144000186021 /* Graffitus.xcdatamodeld */,
-				B201F18A1A56144000186021 /* Image.swift */,
 				B201F18B1A56144000186021 /* Images.xcassets */,
 				B201F1AA1A561D2F00186021 /* Storyboard.storyboard */,
-				B201F18D1A56144000186021 /* Line.swift */,
-				B201F18E1A56144000186021 /* LoginController.swift */,
-				B201F18F1A56144000186021 /* MyGraffitiController.swift */,
-				B201F1901A56144000186021 /* MyTagController.swift */,
-				B201F1911A56144000186021 /* NavController.swift */,
-				B201F1921A56144000186021 /* PaintOptionView.swift */,
-				B201F1931A56144000186021 /* PathWrapper.swift */,
 				B201F1941A56144000186021 /* TabView.swift */,
 				B201F1951A56144000186021 /* TagDB.swift */,
 				B201F15A1A5611A200186021 /* AppDelegate.swift */,
@@ -195,6 +189,47 @@
 				B201F1801A56144000186021 /* LaunchScreen.xib */,
 			);
 			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		B201F1BA1A56332100186021 /* DrawElements */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1931A56144000186021 /* PathWrapper.swift */,
+				B201F18D1A56144000186021 /* Line.swift */,
+				B201F1841A56144000186021 /* CatmullRom.swift */,
+			);
+			name = DrawElements;
+			sourceTree = "<group>";
+		};
+		B201F1BB1A56340700186021 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B201F18A1A56144000186021 /* ImageData.swift */,
+			);
+			name = DataObjects;
+			sourceTree = "<group>";
+		};
+		B201F1BC1A56341500186021 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1821A56144000186021 /* CameraViewController.swift */,
+				B201F1831A56144000186021 /* CanvasController.swift */,
+				B201F18E1A56144000186021 /* LoginController.swift */,
+				B201F1901A56144000186021 /* MyTagController.swift */,
+				B201F1911A56144000186021 /* NavController.swift */,
+				B2AEABA81A565BB500060CA1 /* MyGraffitiController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B201F1BD1A56342C00186021 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B201F1851A56144000186021 /* DrawView.swift */,
+				B2AEABAA1A56725700060CA1 /* SingleGraffitiCell.swift */,
+				B2AEABAC1A5691D900060CA1 /* GraffitiCollection.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,12 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B201F1A61A56144000186021 /* PaintOptionView.swift in Sources */,
 				B201F15B1A5611A200186021 /* AppDelegate.swift in Sources */,
-				B201F1A31A56144000186021 /* MyGraffitiController.swift in Sources */,
+				B2AEABAB1A56725700060CA1 /* SingleGraffitiCell.swift in Sources */,
 				B201F1A21A56144000186021 /* LoginController.swift in Sources */,
 				B201F1981A56144000186021 /* CanvasController.swift in Sources */,
 				B201F19C1A56144000186021 /* GraffitiObject.swift in Sources */,
+				B2AEABAD1A5691D900060CA1 /* GraffitiCollection.swift in Sources */,
 				B201F1A51A56144000186021 /* NavController.swift in Sources */,
 				B201F19D1A56144000186021 /* Graffitus.xcdatamodeld in Sources */,
 				B201F1A41A56144000186021 /* MyTagController.swift in Sources */,
@@ -315,7 +350,8 @@
 				B201F1A11A56144000186021 /* Line.swift in Sources */,
 				B201F1A71A56144000186021 /* PathWrapper.swift in Sources */,
 				B201F1A81A56144000186021 /* TabView.swift in Sources */,
-				B201F19E1A56144000186021 /* Image.swift in Sources */,
+				B2AEABA91A565BB500060CA1 /* MyGraffitiController.swift in Sources */,
+				B201F19E1A56144000186021 /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +470,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -445,6 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
