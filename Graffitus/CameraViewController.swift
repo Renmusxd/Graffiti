@@ -21,6 +21,7 @@ class CameraViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var cameraPreview: UIView!
     
 
     let captureSession = AVCaptureSession()
@@ -39,12 +40,10 @@ class CameraViewController: UIViewController {
         captureSession.sessionPreset = AVCaptureSessionPresetLow
         let devices = AVCaptureDevice.devices()
         // Loop through all the capture devices on this phone
-        println(devices)
+        //println(devices)
         
         
         //deal with navigation bar transparency
-        
-        
         
         
         for device in devices {
@@ -77,8 +76,9 @@ class CameraViewController: UIViewController {
         }
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        self.view.layer.addSublayer(previewLayer)
-        previewLayer?.frame = self.view.layer.frame
+        self.cameraPreview.layer.addSublayer(previewLayer)
+        previewLayer?.frame = self.cameraPreview.layer.frame
+        
         captureSession.startRunning()
     }
     

@@ -247,6 +247,10 @@
                                     <action selector="toCanvas:" destination="g1Z-V6-ezx" eventType="touchUpInside" id="nJe-pm-G6H"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIr-1S-uAj">
+                                <rect key="frame" x="24" y="88" width="273" height="285"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -260,6 +264,7 @@
                         </fragment>
                     </attributedString>
                     <connections>
+                        <outlet property="cameraPreview" destination="eIr-1S-uAj" id="wJk-al-A1M"/>
                         <segue destination="e8Y-g9-gUA" kind="popover" identifier="camToCanvas" popoverAnchorView="by4-2K-meb" id="R9n-Kr-ki7">
                             <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
                         </segue>
