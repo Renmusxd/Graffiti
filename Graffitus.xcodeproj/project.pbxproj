@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4450E0651A58C3A600BF0091 /* CannyEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450E0641A58C3A600BF0091 /* CannyEdge.swift */; };
+		4450E0661A58C3A600BF0091 /* CannyEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450E0641A58C3A600BF0091 /* CannyEdge.swift */; };
+		4450E06A1A58C42400BF0091 /* OpencvBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4450E0691A58C42400BF0091 /* OpencvBridge.m */; };
+		4450E06B1A58C42400BF0091 /* OpencvBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4450E0691A58C42400BF0091 /* OpencvBridge.m */; };
+		4450E06D1A58C4CA00BF0091 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4450E06C1A58C4CA00BF0091 /* opencv2.framework */; };
+		4450E06E1A58C4CA00BF0091 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4450E06C1A58C4CA00BF0091 /* opencv2.framework */; };
 		B201F15B1A5611A200186021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F15A1A5611A200186021 /* AppDelegate.swift */; };
 		B201F1741A5611A200186021 /* GraffitusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201F1731A5611A200186021 /* GraffitusTests.swift */; };
 		B201F1961A56144000186021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B201F1801A56144000186021 /* LaunchScreen.xib */; };
@@ -51,6 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4450E0641A58C3A600BF0091 /* CannyEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannyEdge.swift; sourceTree = "<group>"; };
+		4450E0671A58C42400BF0091 /* Graffitus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Graffitus-Bridging-Header.h"; sourceTree = "<group>"; };
+		4450E0681A58C42400BF0091 /* GraffitusTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraffitusTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4450E0691A58C42400BF0091 /* OpencvBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpencvBridge.m; sourceTree = "<group>"; };
+		4450E06C1A58C4CA00BF0091 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		B201F1551A5611A200186021 /* Graffitus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffitus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B201F15A1A5611A200186021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B201F16D1A5611A200186021 /* GraffitusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraffitusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +105,7 @@
 			files = (
 				B201F1B91A561F5100186021 /* OpenGLES.framework in Frameworks */,
 				B201F1B71A561F4800186021 /* GLKit.framework in Frameworks */,
+				4450E06D1A58C4CA00BF0091 /* opencv2.framework in Frameworks */,
 				B201F1B51A561F4100186021 /* Twitter.framework in Frameworks */,
 				B201F1B31A561F3A00186021 /* CoreGraphics.framework in Frameworks */,
 				B201F1B11A561F3300186021 /* Foundation.framework in Frameworks */,
@@ -106,15 +118,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4450E06E1A58C4CA00BF0091 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4450E0631A58C39100BF0091 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				4450E0641A58C3A600BF0091 /* CannyEdge.swift */,
+				4450E0691A58C42400BF0091 /* OpencvBridge.m */,
+				4450E0671A58C42400BF0091 /* Graffitus-Bridging-Header.h */,
+				4450E0681A58C42400BF0091 /* GraffitusTests-Bridging-Header.h */,
+			);
+			name = Vision;
+			sourceTree = "<group>";
+		};
 		B201F14C1A5611A200186021 = {
 			isa = PBXGroup;
 			children = (
+				4450E06C1A58C4CA00BF0091 /* opencv2.framework */,
 				B201F1B81A561F5100186021 /* OpenGLES.framework */,
 				B201F1B61A561F4800186021 /* GLKit.framework */,
 				B201F1B41A561F4100186021 /* Twitter.framework */,
@@ -140,6 +165,7 @@
 		B201F1571A5611A200186021 /* Graffitus */ = {
 			isa = PBXGroup;
 			children = (
+				4450E0631A58C39100BF0091 /* Vision */,
 				B201F1BD1A56342C00186021 /* Views */,
 				B201F1BC1A56341500186021 /* ViewControllers */,
 				B201F1BB1A56340700186021 /* DataObjects */,
@@ -341,11 +367,13 @@
 				B2AEABAD1A5691D900060CA1 /* GraffitiCollection.swift in Sources */,
 				B201F1A51A56144000186021 /* NavController.swift in Sources */,
 				B201F19D1A56144000186021 /* Graffitus.xcdatamodeld in Sources */,
+				4450E0651A58C3A600BF0091 /* CannyEdge.swift in Sources */,
 				B201F1A41A56144000186021 /* MyTagController.swift in Sources */,
 				B201F1A91A56144000186021 /* TagDB.swift in Sources */,
 				B201F19A1A56144000186021 /* DrawView.swift in Sources */,
 				B201F19B1A56144000186021 /* GraffitiData.swift in Sources */,
 				B201F1971A56144000186021 /* CameraViewController.swift in Sources */,
+				4450E06A1A58C42400BF0091 /* OpencvBridge.m in Sources */,
 				B201F1991A56144000186021 /* CatmullRom.swift in Sources */,
 				B201F1A11A56144000186021 /* Line.swift in Sources */,
 				B201F1A71A56144000186021 /* PathWrapper.swift in Sources */,
@@ -359,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4450E0661A58C3A600BF0091 /* CannyEdge.swift in Sources */,
 				B201F1741A5611A200186021 /* GraffitusTests.swift in Sources */,
+				4450E06B1A58C42400BF0091 /* OpencvBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,10 +496,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Graffitus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graffitus/Graffitus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -478,10 +515,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Graffitus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graffitus/Graffitus-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -490,9 +533,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -501,6 +546,8 @@
 				INFOPLIST_FILE = GraffitusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graffitus/GraffitusTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffitus.app/Graffitus";
 			};
 			name = Debug;
@@ -509,13 +556,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GraffitusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Graffitus/GraffitusTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graffitus.app/Graffitus";
 			};
 			name = Release;
