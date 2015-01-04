@@ -8,8 +8,11 @@
 
 import UIKit
 import CoreData
+
+
+@objc(ImageData)
 class ImageData: NSManagedObject {
-    
+   
     @NSManaged var imageData : NSData
     
 }

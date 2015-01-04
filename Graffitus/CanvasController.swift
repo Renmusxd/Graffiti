@@ -103,7 +103,7 @@ class CanvasController: UIViewController {
     
     
     @IBAction func toGraffitiViewer(sender: AnyObject) {
-        performSegueWithIdentifier("canvasToGraffitiPicker", sender: nil)
+        performSegueWithIdentifier("canvasToMyGraf", sender: nil)
         
     }
     
