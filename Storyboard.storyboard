@@ -169,9 +169,7 @@
                         <outlet property="undoButton" destination="Qiz-LD-ifS" id="aii-we-20Q"/>
                         <outlet property="useButton" destination="nZS-Sd-lMB" id="7sY-mq-NlM"/>
                         <outlet property="widthControl" destination="g6x-6i-0oy" id="tCD-bh-Slx"/>
-                        <segue destination="t3g-g6-Ij0" kind="popover" identifier="canvasToMyGraf" popoverAnchorView="a0l-0y-7Vx" id="GFC-bp-PgG">
-                            <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
-                        </segue>
+                        <segue destination="t3g-g6-Ij0" kind="modal" identifier="canvasToMyGraf" id="GFC-bp-PgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0X-qN-oBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,9 +263,7 @@
                     </attributedString>
                     <connections>
                         <outlet property="cameraPreview" destination="eIr-1S-uAj" id="wJk-al-A1M"/>
-                        <segue destination="e8Y-g9-gUA" kind="popover" identifier="camToCanvas" popoverAnchorView="by4-2K-meb" id="R9n-Kr-ki7">
-                            <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
-                        </segue>
+                        <segue destination="e8Y-g9-gUA" kind="modal" identifier="camToCanvas" id="R9n-Kr-ki7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZO-9I-vok" userLabel="First Responder" sceneMemberID="firstResponder"/>
